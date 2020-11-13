@@ -1,0 +1,106 @@
+patch:
+  schema_list:
+    - schema: wubi_pinyin
+
+  switcher:
+    caption: 〔方案選單〕
+    hotkeys:
+      - "Control+grave"
+      - "Control+Shift+grave"
+    ascii_composer/good_old_caps_lock: true
+    ascii_composer/switch_key:
+      Caps_Lock: clear
+      Shift_L: commit_code
+      Shift_R: commit_text
+      Control_L: noop
+      Control_R: noop
+    save_options:
+      - full_shape
+      - ascii_punct
+      - simplification
+      - extended_charset
+    fold_options: true
+    abbreviate_options: true
+    option_list_separator: '／'
+
+  menu:
+    page_size: 7
+    
+  key_binder:
+    bindings:
+      - {accept: minus, send: Page_Up, when: has_menu}
+      - {accept: equal, send: Page_Down, when: has_menu}
+
+  punctuator:
+    full_shape:
+      " ": {commit: "　"}
+      "!": {commit: "！"}
+      "\"": {pair: ["“", "”"]}
+      "#": ["＃", "⌘"]
+      "$": "￥"
+      "%": "％"
+      "&": "＆"
+      "'": {pair: ["‘", "’"]}
+      "(": "（"
+      ")": "）"
+      "*": ["＊", "・", "×"]
+      "+": "＋"
+      ",": {commit: "，"}
+      "-": "－"
+      .: {commit: "。"}
+      "/": ["／", "÷"]
+      ":": {commit: "："}
+      ";": {commit: "；"}
+      "<": ["《", "〈", "«", "‹"]
+      "=": "＝"
+      ">": ["》", "〉", "»", "›"]
+      "?": {commit: "？"}
+      "@": "＠"
+      "[": ["「", "【", "〔", "［"]
+      "\\": ["、", "＼"]
+      "]": ["」", "】", "〕", "］"]
+      "^": {commit: "……"}
+      _: "——"
+      "`": "｀"
+      "{": ["『", "〖", "｛"]
+      "|": ["·", "｜", "§", "¦"]
+      "}": ["』", "〗", "｝"]
+      "~": "～"
+    half_shape:
+      "!": {commit: "！"}
+      "\"": {pair: ["“", "”"]}
+      "#": "#"
+      "$": "￥"
+      "%": ["%", "％", "°", "℃"]
+      "&": "&"
+      "'": {pair: ["‘", "’"]}
+      "(": "（"
+      ")": "）"
+      "*": ["*", "・", "×"]
+      "+": "+"
+      ",": {commit: "，"}
+      "-": "-"
+      .: {commit: "。"}
+      "/": {commit: "、"}
+      ":": {commit: "："}
+      ";": {commit: "；"}
+      "<": {commit: "《"}
+      "=": "="
+      ">": {commit: "》"}
+      "?": {commit: "？"}
+      "@": "@"
+      "[": {commit: "【"}
+      "\\": {commit: "、"}
+      "]": {commit: "】"}
+      "^": {commit: "……"}
+      _: "——"
+      "`": "`"
+      "{": "『"
+      "|": "|"
+      "}": "』"
+      "~": "~"
+  recognizer:
+    patterns:
+      email: "^[-_.0-9A-Za-z]*@.*$"
+      uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
+      url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
