@@ -17,18 +17,22 @@ schema:
 switches:
   - name: ascii_mode
     reset: 0
-    states: [ 中文, En ]
+    states: [ 中, En ]
   - name: full_shape
-    states: [ 半角, 全角 ]
+    states: [ 半, 全 ]
   - name: extended_charset
     reset: 0
-    states: [ 常用, 增廣 ]
+    states: [ 常, 扩 ]
   - name: ascii_punct
     states: [ 。，, ．， ]
-  - name: zh_simp_s2t
+  - name: traditional_chinese
     reset: 0
     states: [ 简, 繁 ]
+  - name: symbol_support
+    reset: 0
+    states: [ "无符", "符" ]
   - name: emoji_suggestion
+    reset: 0
     states: [ 😑️, 😁️ ]
 
 engine:
@@ -52,8 +56,9 @@ engine:
     - reverse_lookup_translator
     - table_translator
   filters:
-    - simplifier@emoji_suggestion
     - simplifier
+    - simplifier@symbol_support
+    - simplifier@emoji_suggestion
     - uniquifier
 
 speller:
@@ -88,6 +93,11 @@ simplifier:
   opencc_config: s2t.json
   option_name: zh_simp_s2t
 
+symbol_support:
+  opencc_config: symbol.json
+  option_name: symbol_support
+  tips: all
+
 emoji_suggestion:
   opencc_config: emoji.json
   option_name: emoji_suggestion
@@ -102,4 +112,5 @@ key_binder:
 recognizer:
   import_preset: default
   patterns:
+    punct: '^/([a-z]+|[0-9])$'
     reverse_lookup: "`[a-z]*'?$"
