@@ -11,8 +11,7 @@ schema:
     五筆字型86版＋漢語拼音混合輸入。
     碼表源自 ibus-table
   dependencies:
-    - pinyin_simp
-    - emoji
+    - clover
 
 switches:
   - name: ascii_mode
@@ -56,9 +55,9 @@ engine:
     - reverse_lookup_translator
     - table_translator
   filters:
-    - simplifier
     - simplifier@symbol_support
     - simplifier@emoji_suggestion
+    - simplifier
     - uniquifier
 
 speller:
@@ -80,7 +79,7 @@ abc_segmentor:
     - reverse_lookup
 
 reverse_lookup:
-  dictionary: pinyin_simp
+  dictionary: clover
   prefix: "z"
   suffix: "'"
   tips: 〔拼音〕
