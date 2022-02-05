@@ -1,9 +1,9 @@
 # Trime default style settings
 # encoding: utf-8
 
-config_version: "2020年10月20日"
-name: 同文风增强版 #方案名称
-author: SivanLaai
+config_version: ""
+name: Z_Tongwen #方案名称
+author: 
 
 # 键盘候选
 candidate_setting:
@@ -47,7 +47,6 @@ other:
   g: &NJH 6         #数字键盘行距  建议不动
   h: &NJL 6         #数字键盘列距
   i: &NJY 12        #数字键盘圆角
-
 
 
 #颜色
@@ -342,7 +341,7 @@ preset_keyboards:
       - {width: 2}
       - {click: BackSpace, swipe_left: Clear, swipe_up: Candidate_switch1, key_text_offset_y: 0, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst, width: 13, key_text_size: 21}
       # 第四行
-      - {height: *VJM, click: K_number, label: '?123', composing: delimiterD, key_symbol_offset_x: 0, long_click: K_DefaultSymbol, swipe_down: K_menu, key_back_color: gnb, hilited_key_back_color: gnh, key_symbol_color: gns, width: 17, key_text_size: 16} #方案选择
+      - {height: *VJM, click: K_number, label: '?123', composing: delimiterD, key_symbol_offset_x: 0, long_click: K_symbols, swipe_down: K_menu, key_back_color: gnb, hilited_key_back_color: gnh, key_symbol_color: gns, width: 17, key_text_size: 16}
       - {click: ",", label: " ，", key_symbol_offset_x: 0, long_click: "!", swipe_up: "!", key_back_color: bdb, key_text_color: bdt, key_symbol_color: bds, hilited_key_back_color: bdh, hilited_key_text_color: hbdt, width: 14, key_text_size: 16}
       - {click: space1, key_text_size: 18, key_text_offset_x: 0, key_text_offset_y: 0, hilited_key_text_color: hkgt, key_symbol_offset_x: 0, key_symbol_offset_y: 6, long_click: VOICE_ASSIST_Ch, swipe_left: Left, swipe_right: Right, key_back_color: kgb, key_text_color: kgt, key_symbol_color: kgs, hilited_key_back_color: kgh, width: 38}
       - {click: ".", label: " 。", key_symbol_offset_x: 0, long_click: "?", swipe_up: "?", width: 14, key_back_color: bdb, key_text_color: bdt, key_symbol_color: bds, hilited_key_back_color: bdh, hilited_key_text_color: hbdt, key_text_size: 16}
@@ -542,20 +541,19 @@ preset_keyboards:
     horizontal_gap: *FJL
     vertical_gap: *FJH
     keys:
-
+      - {click: "@gmail.com", width: 27, key_text_size: 14}
       - {click: "@hotmail.com", width: 27, key_text_size: 14}
-      - {click: "@163.com", width: 27, key_text_size: 14}
-      - {click: "@qq.com", width: 27, key_text_size: 14}
+      - {click: "@outlook.com", width: 27, key_text_size: 14}
       - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
 
-      - {click: "@gmail.com", width: 27, key_text_size: 14}
+      - {click: "@qq.com", width: 27, key_text_size: 14}
+      - {click: "@163.com", width: 27, key_text_size: 14}
       - {click: "@126.com", width: 27, key_text_size: 14}
-      - {click: "@outlook.com", width: 27, key_text_size: 14}
       - {click: K_symbols01_up, key_text_color: fyt, width: 19}
 
-      - {click: "@csu.edu.cn", width: 27, key_text_size: 14}
-      - {click: '@huawei.com', width: 27, key_text_size: 14}
-      - {click: "lyhhap@hotmail.com", width: 27, key_text_size: 10}
+      - {click: "", width: 27, key_text_size: 14}
+      - {click: "", width: 27, key_text_size: 14}
+      - {click: "", width: 27, key_text_size: 14}
       - {click: K_symbols01_down, key_text_color: fyt, width: 19}
 
       - {click: "", width: 27, key_text_size: 14}
