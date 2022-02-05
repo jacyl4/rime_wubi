@@ -12,17 +12,24 @@ schema:
     碼表源自 ibus-table
   dependencies:
     - pinyin_simp
+    - emoji
 
 switches:
   - name: ascii_mode
     reset: 0
-    states: [ 中文, 西文 ]
+    states: [ 中文, En ]
   - name: full_shape
     states: [ 半角, 全角 ]
   - name: extended_charset
+    reset: 0
     states: [ 常用, 增廣 ]
   - name: ascii_punct
     states: [ 。，, ．， ]
+  - name: zh_simp_s2t
+    reset: 0
+    states: [ 简, 繁 ]
+  - name: emoji_suggestion
+    states: [ 😑️, 😁️ ]
 
 engine:
   processors:
@@ -44,6 +51,20 @@ engine:
     - punct_translator
     - reverse_lookup_translator
     - table_translator
+    - lua_translator@date_translator # 自定义系统变量输出
+  filters:
+    - simplifier@emoji_suggestion
+    - simplifier
+    - uniquifier
+
+simplifier:
+  option_name: zh_simp_s2t
+  opencc_config: s2t.json
+
+emoji_suggestion:
+  opencc_config: emoji.json
+  option_name: emoji_suggestion
+  tips: all
 
 speller:
   delimiter: " ;'"
@@ -56,7 +77,6 @@ translator:
   enable_sentence: true
   enable_encoder: true
   encode_commit_history: true
-  max_phrase_length: 4
   disable_user_dict_for_patterns:
     - "^z.*$"
 
@@ -75,7 +95,7 @@ reverse_lookup:
     - xform/([jqxy])v/$1u/
 
 punctuator:
-  import_preset: default
+  import_preset: symbols
 
 key_binder:
   import_preset: default
@@ -83,4 +103,5 @@ key_binder:
 recognizer:
   import_preset: default
   patterns:
+    punct: '^/([0-9]0?|[A-Za-z]+)$'
     reverse_lookup: "`[a-z]*'?$"
