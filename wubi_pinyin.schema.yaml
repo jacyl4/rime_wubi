@@ -56,15 +56,6 @@ engine:
     - simplifier
     - uniquifier
 
-simplifier:
-  option_name: zh_simp_s2t
-  opencc_config: s2t.json
-
-emoji_suggestion:
-  opencc_config: emoji.json
-  option_name: emoji_suggestion
-  tips: all
-
 speller:
   delimiter: " ;'"
   #max_code_length: 4  # 四碼頂字上屏
@@ -93,6 +84,15 @@ reverse_lookup:
     - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
 
+simplifier:
+  opencc_config: s2t.json
+  option_name: zh_simp_s2t
+
+emoji_suggestion:
+  opencc_config: emoji.json
+  option_name: emoji_suggestion
+  tips: all
+
 punctuator:
   import_preset: symbols
 
@@ -102,5 +102,4 @@ key_binder:
 recognizer:
   import_preset: default
   patterns:
-    punct: '^/([0-9]0?|[A-Za-z]+)$'
     reverse_lookup: "`[a-z]*'?$"
