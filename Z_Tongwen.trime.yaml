@@ -374,13 +374,13 @@ preset_keyboards:
       - {click: 1, composing: "'", key_back_color: szbdb, swipe_up: 1, swipe_down: Hide, key_text_size: 20}
       - {click: 2, key_back_color: szbdb, swipe_up: 2, key_text_size: 20}
       - {click: 3, key_back_color: szbdb, swipe_up: 3, key_text_size: 20}
-      - {click: BackSpace, width: *NUM_SYM_W, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, hilited_key_text_color: szhct, key_symbol_color: bkss, key_text_color: bkst, key_text_size: 20}
+      - {click: K_back, width: *NUM_SYM_W, swipe_up: Color_switch, key_back_color: szgnb, hilited_key_back_color: szgnh, key_text_size: 16}
 
       - {click: "*", width: *NUM_SYM_W, key_text_offset_x: 3, key_symbol_offset_x: -12, key_symbol_offset_y: 20, long_click: "/", key_symbol_color: key_symbol_color, key_back_color: szbdb, key_text_size: 16}
       - {click: 4, key_back_color: szbdb, swipe_up: 4, key_text_size: 20}
       - {click: 5, key_back_color: szbdb, swipe_up: 5, key_text_size: 20}
       - {click: 6, key_back_color: szbdb, swipe_up: 6, key_text_size: 20}
-      - {click: K_back, width: *NUM_SYM_W, swipe_up: Color_switch, key_back_color: szgnb, hilited_key_back_color: szgnh, key_text_size: 16}
+      - {click: BackSpace, width: *NUM_SYM_W, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, hilited_key_text_color: szhct, key_symbol_color: bkss, key_text_color: bkst, key_text_size: 20}
 
       - {click: "@", width: *NUM_SYM_W, key_text_offset_x: 3, key_symbol_offset_x: -12, key_symbol_offset_y: 16, long_click: "(){Left}", swipe_left: "(", swipe_right: ")", key_symbol_color: key_symbol_color, key_back_color: szbdb, key_text_size: 16}
       - {click: 7, key_back_color: szbdb, swipe_up: 7, key_text_size: 20}
@@ -543,22 +543,22 @@ preset_keyboards:
       - {click: "@gmail.com", width: 27, key_text_size: 14}
       - {click: "@hotmail.com", width: 27, key_text_size: 14}
       - {click: "@outlook.com", width: 27, key_text_size: 14}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
 
       - {click: "@qq.com", width: 27, key_text_size: 14}
       - {click: "@163.com", width: 27, key_text_size: 14}
       - {click: "@126.com", width: 27, key_text_size: 14}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+
+      - {click: "", width: 27, key_text_size: 14}
+      - {click: "", width: 27, key_text_size: 14}
+      - {click: "", width: 27, key_text_size: 14}
       - {click: K_symbols01_up, key_text_color: fyt, width: 19}
 
       - {click: "", width: 27, key_text_size: 14}
       - {click: "", width: 27, key_text_size: 14}
       - {click: "", width: 27, key_text_size: 14}
       - {click: K_symbols01_down, key_text_color: fyt, width: 19}
-
-      - {click: "", width: 27, key_text_size: 14}
-      - {click: "", width: 27, key_text_size: 14}
-      - {click: "", width: 27, key_text_size: 14}
-      - {click: K_back, width: 19}
 
       - {click: K_symbols00, key_back_color: key_back_color, width: 12.5}
       - {click: K_symbols10, width: 12.5}
@@ -585,22 +585,22 @@ preset_keyboards:
       - {click: "."}
       - {click: "?"}
       - {click: "!"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: ":"}
       - {click: "/"}
       - {click: "^"}
       - {click: "*"}
-      - {click: K_symbols11, key_text_color: fyt, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: ";"}
       - {click: '"'}
       - {click: "'"}
       - {click: "#"}
-      - {click: K_symbols12x, width: 19}
+      - {click: K_symbols11, key_text_color: fyt, width: 19}
       - {click: "{"}
       - {click: "}"}
       - {click: "_"}
       - {click: "@"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols12x, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, key_back_color: key_back_color, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -626,22 +626,22 @@ preset_keyboards:
       - {click: ")"}
       - {click: "["}
       - {click: "]"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {ascii: "\\", click: "、"}
       - {click: '`'}
       - {click: '~'}
       - {click: "$"}
-      - {click: K_symbols11, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "|"}
       - {click: "+"}
       - {click: "-"}
       - {click: "="}
-      - {click: K_symbols13x, width: 19}
+      - {click: K_symbols11, width: 19}
       - {click: "<"}
       - {click: ">"}
       - {click: "..."}
       - {click: "&"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols13x, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, key_back_color: key_back_color, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -667,22 +667,22 @@ preset_keyboards:
       - {click: "Ⓑ"}
       - {click: "Ⓒ"}
       - {click: "Ⓓ"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "Ⓔ"}
       - {click: "Ⓕ"}
       - {click: "Ⓖ"}
       - {click: "Ⓗ"}
-      - {click: K_symbols12, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "Ⓘ"}
       - {click: "Ⓙ"}
       - {click: "Ⓚ"}
       - {click: "Ⓛ"}
-      - {click: K_symbols14x, width: 19}
+      - {click: K_symbols12, width: 19}
       - {click: "Ⓜ"}
       - {click: "Ⓝ"}
       - {click: "Ⓞ"}
       - {click: "Ⓟ"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols14x, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, key_back_color: key_back_color, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -708,22 +708,22 @@ preset_keyboards:
       - {click: "Ⓡ"}
       - {click: "Ⓢ"}
       - {click: "Ⓣ"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "Ⓤ"}
       - {click: "Ⓥ"}
       - {click: "Ⓦ"}
       - {click: "Ⓧ"}
-      - {click: K_symbols13, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "Ⓨ"}
       - {click: "Ⓩ"}
       - {click: ""}
       - {click: ""}
+      - {click: K_symbols13, width: 19}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
       - {click: K_symbols14x, key_text_color: fyt, width: 19}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: K_back, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, key_back_color: key_back_color, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -749,22 +749,22 @@ preset_keyboards:
       - {click: "。"}
       - {click: "？"}
       - {click: "！"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "："}
       - {click: "、"}
       - {click: "@"}
       - {click: "……"}
-      - {click: K_symbols21, key_text_color: fyt, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "“”{Left}"}
       - {click: "；"}
       - {click: "‘’{Left}"}
       - {click: "——"}
-      - {click: K_symbols22x, width: 19}
+      - {click: K_symbols21, key_text_color: fyt, width: 19}
       - {click: "（）{Left}"}
       - { click: "《》{Left}"}
       - {click: "〈〉{Left}"}
       - {click: "〔〕{Left}"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols22x, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, key_back_color: key_back_color, width: 12.5}
@@ -790,22 +790,22 @@ preset_keyboards:
       - {click: "【】{Left}"}
       - {click: "「」{Left}"}
       - {click: "『』{Left}"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "+"}
       - {click: "-"}
       - {click: "×"}
       - {click: "÷"}
-      - {click: K_symbols21, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "="}
       - {click: "#"}
       - {click: "￥"}
       - {click: "%"}
-      - {click: K_symbols22x, key_text_color: fyt, width: 19}
+      - {click: K_symbols21, width: 19}
       - {click: "ˇ"}
       - {click: "*"}
       - {click: "&"}
       - {click: "～"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols22x, key_text_color: fyt, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, key_back_color: key_back_color, width: 12.5}
@@ -831,22 +831,22 @@ preset_keyboards:
       - {click: "^ω^", key_text_size: "11"}
       - {click: "^o^", key_text_size: "11"}
       - {click: "*^_^*", key_text_size: "11"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "↖(^ω^)↗", key_text_size: "11"}
       - {click: "(^o^)／", key_text_size: "11"}
       - {click: "(=^▽^=)", key_text_size: "11"}
       - {click: "=^_^=", key_text_size: "11"}
-      - {click: K_symbols31, key_text_color: fyt, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "(*^ω^*)", key_text_size: "11"}
       - {click: "٩(๑^o^๑)۶", key_text_size: "11"}
       - {click: "o(￣▽￣)o", key_text_size: "11"}
       - {click: "Y(^_^)Y", key_text_size: "11"}
-      - {click: K_symbols32x, width: 19}
+      - {click: K_symbols31, key_text_color: fyt, width: 19}
       - {click: "٩( 'ω' )و", key_text_size: "11"}
       - {click: "╰(*´︶`*)╯", key_text_size: "11"}
       - {click: "*罒▽罒*", key_text_size: "11"}
       - {click: "ヾ ^_^♪", key_text_size: "11"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols32x, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -872,22 +872,22 @@ preset_keyboards:
       - {click: "(●—●)", key_text_size: "11"}
       - {click: "(๑• . •๑)", key_text_size: "11"}
       - {click: "(๑•̀ㅂ•́)و✧", key_text_size: "11"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "罒ω罒", key_text_size: "11"}
       - {click: "(｡ì _ í｡)", key_text_size: "11"}
       - {click: "(๑•ี_เ•ี๑)", key_text_size: "11"}
       - {click: "ㄟ(≧◇≦)ㄏ", key_text_size: "11"}
-      - {click: K_symbols31, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "(*/ω＼*)", key_text_size: "11"}
       - {click: "٩(๑òωó๑)۶", key_text_size: "11"}
       - {click: "( σ'ω')σ", key_text_size: "11"}
       - {click: "♡＾▽＾♡", key_text_size: "11"}
-      - {click: K_symbols33x, width: 19}
+      - {click: K_symbols31, width: 19}
       - {click: "(ง •̀_•́)ง", key_text_size: "11"}
       - {click: "(｡･ω･｡)ﾉ♡", key_text_size: "11"}
       - {click: "(๑°3°๑)", key_text_size: "11"}
       - {click: "_(•̀ω•́ 」∠)_", key_text_size: "11"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols33x, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -913,22 +913,22 @@ preset_keyboards:
       - {click: "T_T", key_text_size: "11"}
       - {click: "⊙︿⊙", key_text_size: "11"}
       - {click: "〒▽〒", key_text_size: "11"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "⊙﹏⊙", key_text_size: "11"}
       - {click: "π_π", key_text_size: "11"}
       - {click: "(｡•́︿•̀｡)", key_text_size: "11"}
       - {click: "(ToT)/~~~", key_text_size: "11"}
-      - {click: K_symbols32, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "╯﹏╰", key_text_size: "11"}
       - {click: "ಥ_ಥ", key_text_size: "11"}
       - {click: "(╥╯^╰╥)", key_text_size: "11"}
       - {click: "(〃′o`)", key_text_size: "11"}
-      - {click: K_symbols34x, width: 19}
+      - {click: K_symbols32, width: 19}
       - {click: "( •̥́ ˍ •̀ू )", key_text_size: "11"}
       - {click: "(つд⊂)", key_text_size: "11"}
       - {click: "心塞(´-ωก`)", key_text_size: "11"}
       - {click: "(╥﹏╥)", key_text_size: "11"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols34x, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -954,22 +954,22 @@ preset_keyboards:
       - {click: ">o<", key_text_size: "11"}
       - {click: "(-`ェ´-怒)", key_text_size: "11"}
       - {click: "ヽ(‘⌒´メ)ノ", key_text_size: "11"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "(*｀Ω´*)v", key_text_size: "11"}
       - {click: "(｡•ˇ‸ˇ•｡)", key_text_size: "11"}
       - {click: "(怒｀Д´怒)", key_text_size: "11"}
       - {click: "٩(๑`^´๑)۶", key_text_size: "11"}
-      - {click: K_symbols33, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "<(｀^´)>", key_text_size: "11"}
       - {click: "（｀Δ´）！", key_text_size: "11"}
       - {click: "ψ(｀∇´)ψ", key_text_size: "11"}
       - {click: "(；′⌒`)", key_text_size: "11"}
-      - {click: K_symbols35x, width: 19}
+      - {click: K_symbols33, width: 19}
       - {click: "（▼へ▼メ）", key_text_size: "11"}
       - {click: "☄ฺ(◣д◢)☄ฺ", key_text_size: "11"}
       - {click: "→_→", key_text_size: "11"}
       - {click: "(;｀O´)o", key_text_size: "11"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols35x, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -995,22 +995,22 @@ preset_keyboards:
       - {click: "d(ŐдŐ๑)", key_text_size: "11"}
       - {click: "┑(￣Д ￣)┍", key_text_size: "11"}
       - {click: "╭(°A°`)╮", key_text_size: "11"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "⊙▽⊙", key_text_size: "11"}
       - {click: "(๑òᆺó๑)", key_text_size: "11"}
       - {click: "(#ﾟДﾟ)", key_text_size: "11"}
       - {click: "Σ⊙▃⊙川", key_text_size: "11"}
-      - {click: K_symbols34, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "⊙ω⊙", key_text_size: "11"}
       - {click: "(๑ŐдŐ)b", key_text_size: "11"}
       - {click: "┌(。Д。)┐", key_text_size: "11"}
       - {click: "(°ー°〃)", key_text_size: "11"}
-      - {click: K_symbols36x, width: 19}
+      - {click: K_symbols34, width: 19}
       - {click: "(⊙x⊙;)", key_text_size: "11"}
       - {click: "!!!∑(°Д°ノ)ノ", key_text_size: "11"}
       - {click: "Σ(っ °Д °;)っ", key_text_size: "11"}
       - {click: "ヽ(*。>Д<)o゜", key_text_size: "11"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols36x, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -1036,22 +1036,22 @@ preset_keyboards:
       - {click: "╮(╯_╰)╭", key_text_size: "11"}
       - {click: "（︶︿︶）", key_text_size: "11"}
       - {click: "_(:з」∠)_", key_text_size: "11"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "@_@", key_text_size: "11"}
       - {click: "╮(╯▽╰)╭", key_text_size: "11"}
       - {click: "(＠￣ー￣＠)", key_text_size: "11"}
       - {click: "_(:3」∠❀)_", key_text_size: "11"}
-      - {click: K_symbols35, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "눈_눈", key_text_size: "11"}
       - {click: "╭(╯ε╰)╮", key_text_size: "11"}
       - {click: "(ー_ー)!!", key_text_size: "11"}
       - {click: "_(:D)∠)_", key_text_size: "11"}
-      - {click: K_symbols36x, key_text_color: fyt, width: 19}
+      - {click: K_symbols35, width: 19}
       - {click: "o_O", key_text_size: "11"}
       - {click: "╭(╯^╰)╮", key_text_size: "11"}
       - {click: "(；一_一)", key_text_size: "11"}
       - {click: "´_>`", key_text_size: "11"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols36x, key_text_color: fyt, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -1079,28 +1079,28 @@ preset_keyboards:
       - {click: "😀"}
       - {click: "😁"}
       - {click: "😂"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "😆"}
       - {click: "😉"}
       - {click: "😊"}
       - {click: "😋"}
       - {click: "😎"}
       - {click: "😍"}
-      - {click: K_symbols41, key_text_color: fyt, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "😘"}
       - {click: "😗"}
       - {click: "😙"}
       - {click: "😚"}
       - {click: "☺"}
       - {click: "🙂"}
-      - {click: K_symbols42x, width: 19}
+      - {click: K_symbols41, key_text_color: fyt, width: 19}
       - {click: "🤗"}
       - {click: "😇"}
       - {click: "🤓"}
       - {click: "🤔"}
       - {click: "😐"}
       - {click: "😑"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols42x, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -1128,28 +1128,28 @@ preset_keyboards:
       - {click: "😶"}
       - {click: "🙄"}
       - {click: "😏"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "🙃"}
       - {click: "😯"}
       - {click: "😪"}
       - {click: "😫"}
       - {click: "😴"}
       - {click: "😌"}
-      - {click: K_symbols41, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "😛"}
       - {click: "😜"}
       - {click: "😝"}
       - {click: "😒"}
       - {click: "😓"}
       - {click: "😔"}
-      - {click: K_symbols43x, width: 19}
+      - {click: K_symbols41, width: 19}
       - {click: "😕"}
       - {click: "🤑"}
       - {click: "😲"}
       - {click: "😷"}
       - {click: "🤒"}
       - {click: "🤐"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols43x, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -1177,28 +1177,28 @@ preset_keyboards:
       - {click: "👌"}
       - {click: "💅"}
       - {click: "🙏"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "🖕"}
       - {click: "👎"}
       - {click: "✊"}
       - {click: "🤘"}
       - {click: "👏"}
       - {click: "👍"}
-      - {click: K_symbols42, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "💋"}
       - {click: "🎂"}
       - {click: "🍻"}
       - {click: "🍚"}
       - {click: "🍷"}
       - {click: "☕"}
-      - {click: K_symbols44x, width: 19}
+      - {click: K_symbols42, width: 19}
       - {click: "💔"}
       - {click: "🌹"}
       - {click: "💣"}
       - {click: "💪"}
       - {click: "💯"}
       - {click: "💤"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols44x, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -1226,28 +1226,28 @@ preset_keyboards:
       - {click: "😞"}
       - {click: "😟"}
       - {click: "😤"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "😢"}
       - {click: "😭"}
       - {click: "😦"}
       - {click: "😧"}
       - {click: "😨"}
       - {click: "😩"}
-      - {click: K_symbols43, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "😬"}
       - {click: "😰"}
       - {click: "😱"}
       - {click: "😳"}
       - {click: "😵"}
       - {click: "😡"}
-      - {click: K_symbols44x, key_text_color: fyt, width: 19}
+      - {click: K_symbols43, width: 19}
       - {click: "😠"}
       - {click: "🌝"}
       - {click: ""}
       - {click: ""}
       - {click: ""}
       - {click: ""}
-      - {click: K_back, width: 19}
+      - {click: K_symbols44x, key_text_color: fyt, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -1275,28 +1275,28 @@ preset_keyboards:
       - {click: "◇"}
       - {click: "□"}
       - {click: "☆"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "▲"}
       - {click: "▼"}
       - {click: "●"}
       - {click: "◆"}
       - {click: "■"}
       - {click: "★"}
-      - {click: K_symbols51, key_text_color: fyt, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "▷"}
       - {click: "◁"}
       - {click: "▶"}
       - {click: "◀"}
       - {click: "√"}
       - {click: "×"}
-      - {click: K_symbols52x, width: 19}
+      - {click: K_symbols51, key_text_color: fyt, width: 19}
       - {click: "⌫"}
       - {click: "✡"}
       - {click: "☑"}
       - {click: "☒"}
       - {click: "✔"}
       - {click: "✘"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols52x, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -1324,28 +1324,28 @@ preset_keyboards:
       - {click: "☻"}
       - {click: "◐"}
       - {click: "㏂"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "☀"}
       - {click: "☾"}
       - {click: "♂"}
       - {click: "☹"}
       - {click: "◑"}
       - {click: "㏘"}
-      - {click: K_symbols51, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "☜"}
       - {click: "☝"}
       - {click: "☞"}
       - {click: "☚"}
       - {click: "☟"}
       - {click: "☛"}
-      - {click: K_symbols53x, width: 19}
+      - {click: K_symbols51, width: 19}
       - {click: "▪"}
       - {click: "•"}
       - {click: "‥"}
       - {click: "…"}
       - {click: "∷"}
       - {click: "※"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols53x, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -1373,28 +1373,28 @@ preset_keyboards:
       - {click: "♬"}
       - {click: "§"}
       - {click: "°"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "♭"}
       - {click: "♯"}
       - {click: "♮"}
       - {click: "‖"}
       - {click: "¶"}
       - {click: "№"}
-      - {click: K_symbols52, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "◎"}
       - {click: "¤"}
       - {click: "۞"}
       - {click: "℗"}
       - {click: "®"}
       - {click: "©"}
-      - {click: K_symbols54x, width: 19}
+      - {click: K_symbols52, width: 19}
       - {click: "卍"}
       - {click: "卐"}
       - {click: "℡"}
       - {click: "™"}
       - {click: "㏇"}
       - {click: "Φ"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols54x, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -1422,28 +1422,28 @@ preset_keyboards:
       - {click: "◤"}
       - {click: "㊤"}
       - {click: "◥"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "←"}
       - {click: "↔"}
       - {click: "→"}
       - {click: "㊧"}
       - {click: "㊥"}
       - {click: "㊨"}
-      - {click: K_symbols53, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "↙"}
       - {click: "↓"}
       - {click: "↘"}
       - {click: "◣"}
       - {click: "㊦"}
       - {click: "◢"}
-      - {click: K_symbols55x, width: 19}
+      - {click: K_symbols53, width: 19}
       - {click: "⇄"}
       - {click: "⇅"}
       - {click: "⇆"}
       - {click: "⇤"}
       - {click: "↩"}
       - {click: "⇥"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols55x, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -1471,28 +1471,28 @@ preset_keyboards:
       - {click: "〼"}
       - {click: "▢"}
       - {click: "▣"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "⇦"}
       - {click: "⇧"}
       - {click: "⇨"}
       - {click: "⇩"}
       - {click: "⇪"}
       - {click: "↶"}
-      - {click: K_symbols54, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "▸"}
       - {click: "◂"}
       - {click: "▴"}
       - {click: "▾"}
       - {click: "✁"}
       - {click: "☏"}
-      - {click: K_symbols56x, width: 19}
+      - {click: K_symbols54, width: 19}
       - {click: "✍"}
       - {click: "❅"}
       - {click: "ϟ"}
       - {click: "📝"}
       - {click: "✎"}
       - {click: "✆"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols56x, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -1520,28 +1520,28 @@ preset_keyboards:
       - {click: "⚿"}
       - {click: "⛮"}
       - {click: "⚙"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "☳"}
       - {click: "☯"}
       - {click: "☱"}
       - {click: "⛶"}
       - {click: "☩"}
       - {click: "☐"}
-      - {click: K_symbols55, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "☶"}
       - {click: "☵"}
       - {click: "☰"}
       - {click: "💬"}
       - {click: "🗨"}
       - {click: "💭"}
-      - {click: K_symbols56x, key_text_color: fyt, width: 19}
+      - {click: K_symbols55, width: 19}
       - {click: "ღ"}
       - {click: "✈"}
       - {click: "☂"}
       - {click: "🎤"}
       - {click: "🌐"}
       - {click: "🔍"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols56x, key_text_color: fyt, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -1569,28 +1569,28 @@ preset_keyboards:
       - {click: "/"}
       - {click: "="}
       - {click: "≡"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "﹤"}
       - {click: "﹥"}
       - {click: "≦"}
       - {click: "≧"}
       - {click: "≮"}
       - {click: "≯"}
-      - {click: K_symbols61, key_text_color: fyt, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "＋"}
       - {click: "－"}
       - {click: "×"}
       - {click: "÷"}
       - {click: "＝"}
       - {click: "≠"}
-      - {click: K_symbols62x, width: 19}
+      - {click: K_symbols61, key_text_color: fyt, width: 19}
       - {click: "＜"}
       - {click: "＞"}
       - {click: "≤"}
       - {click: "≥"}
       - {click: "≈"}
       - {click: "≒"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols62x, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -1618,28 +1618,28 @@ preset_keyboards:
       - {click: "㎜"}
       - {click: "㎝"}
       - {click: "㎞"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "℃"}
       - {click: "¥"}
       - {click: "$"}
       - {click: "€"}
       - {click: "฿"}
       - {click: "￡"}
-      - {click: K_symbols61, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "㎡"}
       - {click: "m³"}
       - {click: "㏄"}
       - {click: "ml"}
       - {click: "mol"}
       - {click: "㏕"}
-      - {click: K_symbols63x, width: 19}
+      - {click: K_symbols61, width: 19}
       - {click: "℉"}
       - {click: "￥"}
       - {click: "£"}
       - {click: "￠"}
       - {click: "₠"}
       - {click: "〒"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols63x, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -1667,28 +1667,28 @@ preset_keyboards:
       - {click: "∩"}
       - {click: "∧"}
       - {click: "⊙"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "⌒"}
       - {click: "∥"}
       - {click: "∟"}
       - {click: "∣"}
       - {click: "∂"}
       - {click: "∆"}
-      - {click: K_symbols62, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "∞"}
       - {click: "≌"}
       - {click: "∉"}
       - {click: "∪"}
       - {click: "∨"}
       - {click: "⊕"}
-      - {click: K_symbols64x, width: 19}
+      - {click: K_symbols62, width: 19}
       - {click: "⊿"}
       - {click: "⊥"}
       - {click: "∠"}
       - {click: "∫"}
       - {click: "∬"}
       - {click: "∭"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols64x, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -1716,28 +1716,28 @@ preset_keyboards:
       - {click: "⁴"}
       - {click: "⁵"}
       - {click: "ⁿ"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "⁶"}
       - {click: "⁷"}
       - {click: "⁸"}
       - {click: "⁹"}
       - {click: "⁰"}
       - {click: "ˣ"}
-      - {click: K_symbols63, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "⁺"}
       - {click: "⁻"}
       - {click: "⁼"}
       - {click: "⁽"}
       - {click: "⁾"}
       - {click: "‰"}
-      - {click: K_symbols65x, width: 19}
+      - {click: K_symbols63, width: 19}
       - {click: "½"}
       - {click: "⅓"}
       - {click: "¼"}
       - {click: "⅔"}
       - {click: "¾"}
       - {click: "％"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols65x, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -1765,28 +1765,28 @@ preset_keyboards:
       - {click: "₄"}
       - {click: "₅"}
       - {click: "ₙ"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "₆"}
       - {click: "₇"}
       - {click: "₈"}
       - {click: "₉"}
       - {click: "₀"}
       - {click: "ₓ"}
-      - {click: K_symbols64, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "₊"}
       - {click: "₋"}
       - {click: "₌"}
       - {click: "₍"}
       - {click: "₎"}
       - {click: "℅"}
-      - {click: K_symbols65x, key_text_color: fyt, width: 19}
+      - {click: K_symbols64, width: 19}
       - {click: "°"}
       - {click: "′"}
       - {click: "″"}
       - {click: "∮"}
       - {click: "∯"}
       - {click: "∰"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols65x, key_text_color: fyt, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
       - {click: K_symbols20, width: 12.5}
@@ -1813,25 +1813,25 @@ preset_keyboards:
       - {click: "③"}
       - {click: "④"}
       - {click: "⑤"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "⑥"}
       - {click: "⑦"}
       - {click: "⑧"}
       - {click: "⑨"}
       - {click: "⑩"}
-      - {click: K_symbols71, key_text_color: fyt, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "⒈"}
       - {click: "⒉"}
       - {click: "⒊"}
       - {click: "⒋"}
       - {click: "⒌"}
-      - {click: K_symbols72x, width: 19}
+      - {click: K_symbols71, key_text_color: fyt, width: 19}
       - {click: "⒍"}
       - {click: "⒎"}
       - {click: "⒏"}
       - {click: "⒐"}
       - {click: "⒑"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols72x, width: 19}
       - {click: K_symbols70, key_back_color: key_back_color, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, width: 12.5}
@@ -1858,25 +1858,25 @@ preset_keyboards:
       - {click: "⒔"}
       - {click: "⒕"}
       - {click: "⒖"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "⒗"}
       - {click: "⒘"}
       - {click: "⒙"}
       - {click: "⒚"}
       - {click: "⒛"}
-      - {click: K_symbols71, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "⑴"}
       - {click: "⑵"}
       - {click: "⑶"}
       - {click: "⑷"}
       - {click: "⑸"}
-      - {click: K_symbols73x, width: 19}
+      - {click: K_symbols71, width: 19}
       - {click: "⑹"}
       - {click: "⑺"}
       - {click: "⑻"}
       - {click: "⑼"}
       - {click: "⑽"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols73x, width: 19}
       - {click: K_symbols70, key_back_color: key_back_color, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, width: 12.5}
@@ -1903,25 +1903,25 @@ preset_keyboards:
       - {click: "⒀"}
       - {click: "⒁"}
       - {click: "⒂"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "⒃"}
       - {click: "⒄"}
       - {click: "⒅"}
       - {click: "⒆"}
       - {click: "⒇"}
-      - {click: K_symbols72, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "㈠"}
       - {click: "㈡"}
       - {click: "㈢"}
       - {click: "㈣"}
       - {click: "㈤"}
-      - {click: K_symbols74x, width: 19}
+      - {click: K_symbols72, width: 19}
       - {click: "㈥"}
       - {click: "㈦"}
       - {click: "㈧"}
       - {click: "㈨"}
       - {click: "㈩"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols74x, width: 19}
       - {click: K_symbols70, key_back_color: key_back_color, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, width: 12.5}
@@ -1948,25 +1948,25 @@ preset_keyboards:
       - {click: "➌"}
       - {click: "➍"}
       - {click: "➎"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "➏"}
       - {click: "➐"}
       - {click: "➑"}
       - {click: "➒"}
       - {click: "➓"}
-      - {click: K_symbols73, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "㊀"}
       - {click: "㊁"}
       - {click: "㊂"}
       - {click: "㊃"}
       - {click: "㊄"}
-      - {click: K_symbols75x, width: 19}
+      - {click: K_symbols73, width: 19}
       - {click: "㊅"}
       - {click: "㊆"}
       - {click: "㊇"}
       - {click: "㊈"}
       - {click: "㊉"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols75x, width: 19}
       - {click: K_symbols70, key_back_color: key_back_color, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, width: 12.5}
@@ -1993,25 +1993,25 @@ preset_keyboards:
       - {click: "ⅲ"}
       - {click: "ⅳ"}
       - {click: "ⅴ"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "ⅵ"}
       - {click: "ⅶ"}
       - {click: "ⅷ"}
       - {click: "ⅸ"}
       - {click: "ⅹ"}
-      - {click: K_symbols74, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "Ⅰ"}
       - {click: "Ⅱ"}
       - {click: "Ⅲ"}
       - {click: "Ⅳ"}
       - {click: "Ⅴ"}
-      - {click: K_symbols75x, key_text_color: fyt, width: 19}
+      - {click: K_symbols74, width: 19}
       - {click: "Ⅵ"}
       - {click: "Ⅶ"}
       - {click: "Ⅷ"}
       - {click: "Ⅸ"}
       - {click: "Ⅹ"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols75x, key_text_color: fyt, width: 19}
       - {click: K_symbols70, key_back_color: key_back_color, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, width: 12.5}
@@ -2039,28 +2039,28 @@ preset_keyboards:
       - {click: "┏"}
       - {click: "┳"}
       - {click: "┓"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "├"}
       - {click: "┼"}
       - {click: "┤"}
       - {click: "┣"}
       - {click: "╋"}
       - {click: "┫"}
-      - {click: K_symbols81, key_text_color: fyt, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "└"}
       - {click: "┴"}
       - {click: "┘"}
       - {click: "┗"}
       - {click: "┻"}
       - {click: "┛"}
-      - {click: K_symbols82x, width: 19}
+      - {click: K_symbols81, key_text_color: fyt, width: 19}
       - {click: "┍"}
       - {click: "┑"}
       - {click: "┕"}
       - {click: "┙"}
       - {click: "┄"}
       - {click: "┆"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols82x, width: 19}
       - {click: K_symbols70, width: 12.5}
       - {click: K_symbols80, key_back_color: key_back_color, width: 12.5}
       - {click: K_symbols90, width: 12.5}
@@ -2088,28 +2088,28 @@ preset_keyboards:
       - {click: "╭"}
       - {click: "─"}
       - {click: "╮"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "╠"}
       - {click: "╬"}
       - {click: "╣"}
       - {click: "│"}
       - {click: "╳"}
       - {click: "┃"}
-      - {click: K_symbols81, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "╚"}
       - {click: "╩"}
       - {click: "╝"}
       - {click: "╰"}
       - {click: "━"}
       - {click: "╯"}
-      - {click: K_symbols83x, width: 19}
+      - {click: K_symbols81, width: 19}
       - {click: "┎"}
       - {click: "┒"}
       - {click: "┖"}
       - {click: "┚"}
       - {click: "┅"}
       - {click: "┇"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols83x, width: 19}
       - {click: K_symbols70, width: 12.5}
       - {click: K_symbols80, key_back_color: key_back_color, width: 12.5}
       - {click: K_symbols90, width: 12.5}
@@ -2137,28 +2137,28 @@ preset_keyboards:
       - {click: "╖"}
       - {click: "╱"}
       - {click: "╲"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "╘"}
       - {click: "╛"}
       - {click: "╙"}
       - {click: "╜"}
       - {click: "╲"}
       - {click: "╱"}
-      - {click: K_symbols82, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "╞"}
       - {click: "╡"}
       - {click: "╥"}
       - {click: "╨"}
       - {click: "╪"}
       - {click: "╫"}
-      - {click: K_symbols83x, key_text_color: fyt, width: 19}
+      - {click: K_symbols82, width: 19}
       - {click: "╟"}
       - {click: "╢"}
       - {click: "╤"}
       - {click: "╧"}
       - {click: "═"}
       - {click: "║"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols83x, key_text_color: fyt, width: 19}
       - {click: K_symbols70, width: 12.5}
       - {click: K_symbols80, key_back_color: key_back_color, width: 12.5}
       - {click: K_symbols90, width: 12.5}
@@ -2186,28 +2186,28 @@ preset_keyboards:
       - {click: "à"}
       - {click: "ō"}
       - {click: "ó"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "ē"}
       - {click: "é"}
       - {click: "ě"}
       - {click: "è"}
       - {click: "ǒ"}
       - {click: "ò"}
-      - {click: K_symbols91, key_text_color: fyt, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "ī"}
       - {click: "í"}
       - {click: "ǐ"}
       - {click: "ì"}
       - {click: "ū"}
       - {click: "ú"}
-      - {click: K_symbols92x, width: 19}
+      - {click: K_symbols91, key_text_color: fyt, width: 19}
       - {click: "ǖ"}
       - {click: "ǘ"}
       - {click: "ǚ"}
       - {click: "ǜ"}
       - {click: "ǔ"}
       - {click: "ù"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols92x, width: 19}
       - {click: K_symbols70, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, key_back_color: key_back_color, width: 12.5}
@@ -2235,28 +2235,28 @@ preset_keyboards:
       - {click: "ń"}
       - {click: "ň"}
       - {click: ""}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "ㄚ"}
       - {click: "ㄛ"}
       - {click: "ㄜ"}
       - {click: "ㄧ"}
       - {click: "ㄨ"}
       - {click: "ㄩ"}
-      - {click: K_symbols91, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "ㄝ"}
       - {click: "ㄞ"}
       - {click: "ㄟ"}
       - {click: "ㄠ"}
       - {click: "ㄡ"}
       - {click: "ㄢ"}
-      - {click: K_symbols93x, width: 19}
+      - {click: K_symbols91, width: 19}
       - {click: "ㄣ"}
       - {click: "ㄤ"}
       - {click: "ㄥ"}
       - {click: "ㄦ"}
       - {click: "ㄅ"}
       - {click: "ㄆ"}
-      - {click: K_back, width: 19}
+      - {click: K_symbols93x, width: 19}
       - {click: K_symbols70, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, key_back_color: key_back_color, width: 12.5}
@@ -2284,28 +2284,28 @@ preset_keyboards:
       - {click: "ㄊ"}
       - {click: "ㄋ"}
       - {click: "ㄌ"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "ㄍ"}
       - {click: "ㄎ"}
       - {click: "ㄏ"}
       - {click: "ㄐ"}
       - {click: "ㄑ"}
       - {click: "ㄒ"}
-      - {click: K_symbols92, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "ㄓ"}
       - {click: "ㄔ"}
       - {click: "ㄕ"}
       - {click: "ㄖ"}
       - {click: "ㄗ"}
       - {click: "ㄘ"}
-      - {click: K_symbols93x, key_text_color: fyt, width: 19}
+      - {click: K_symbols92, width: 19}
       - {click: "ㄙ"}
       - {click: ""}
       - {click: ""}
       - {click: ""}
       - {click: ""}
       - {click: ""}
-      - {click: K_back, width: 19}
+      - {click: K_symbols93x, key_text_color: fyt, width: 19}
       - {click: K_symbols70, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, key_back_color: key_back_color, width: 12.5}
@@ -2333,28 +2333,28 @@ preset_keyboards:
       - {click: "Δ"}
       - {click: "Ε"}
       - {click: "Ζ"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "Η"}
       - {click: "Θ"}
       - {click: "Ι"}
       - {click: "Κ"}
       - {click: "Λ"}
       - {click: "Μ"}
-      - {click: K_symbolsA1, key_text_color: fyt, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "Ν"}
       - {click: "Ξ"}
       - {click: "Ο"}
       - {click: "Π"}
       - {click: "Ρ"}
       - {click: "Σ"}
-      - {click: K_symbolsA2x, width: 19}
+      - {click: K_symbolsA1, key_text_color: fyt, width: 19}
       - {click: "Τ"}
       - {click: "Υ"}
       - {click: "Φ"}
       - {click: "Χ"}
       - {click: "Ψ"}
       - {click: "Ω"}
-      - {click: K_back, width: 19}
+      - {click: K_symbolsA2x, width: 19}
       - {click: K_symbols70, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, width: 12.5}
@@ -2382,28 +2382,28 @@ preset_keyboards:
       - {click: "δ"}
       - {click: "ε"}
       - {click: "ζ"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "η"}
       - {click: "θ"}
       - {click: "ι"}
       - {click: "κ"}
       - {click: "λ"}
       - {click: "μ"}
-      - {click: K_symbolsA1, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "ν"}
       - {click: "ξ"}
       - {click: "ο"}
       - {click: "π"}
       - {click: "ρ"}
       - {click: "σ"}
-      - {click: K_symbolsA3x, width: 19}
+      - {click: K_symbolsA1, width: 19}
       - {click: "τ"}
       - {click: "υ"}
       - {click: "φ"}
       - {click: "χ"}
       - {click: "ψ"}
       - {click: "ω"}
-      - {click: K_back, width: 19}
+      - {click: K_symbolsA3x, width: 19}
       - {click: K_symbols70, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, width: 12.5}
@@ -2431,28 +2431,28 @@ preset_keyboards:
       - {click: "Г"}
       - {click: "Д"}
       - {click: "Е"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "Ё"}
       - {click: "Ж"}
       - {click: "З"}
       - {click: "И"}
       - {click: "Й"}
       - {click: "К"}
-      - {click: K_symbolsA2, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "Л"}
       - {click: "М"}
       - {click: "Н"}
       - {click: "О"}
       - {click: "П"}
       - {click: "Р"}
-      - {click: K_symbolsA4x, width: 19}
+      - {click: K_symbolsA2, width: 19}
       - {click: "С"}
       - {click: "Т"}
       - {click: "У"}
       - {click: "Ф"}
       - {click: "Х"}
       - {click: "Ц"}
-      - {click: K_back, width: 19}
+      - {click: K_symbolsA4x, width: 19}
       - {click: K_symbols70, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, width: 12.5}
@@ -2480,28 +2480,28 @@ preset_keyboards:
       - {click: "Ъ"}
       - {click: "Ы"}
       - {click: "Ь"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "Э"}
       - {click: "Ю"}
       - {click: "Я"}
       - {click: ""}
       - {click: ""}
       - {click: ""}
-      - {click: K_symbolsA3, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "а"}
       - {click: "б"}
       - {click: "в"}
       - {click: "г"}
       - {click: "д"}
       - {click: "е"}
-      - {click: K_symbolsA5x, width: 19}
+      - {click: K_symbolsA3, width: 19}
       - {click: "ё"}
       - {click: "ж"}
       - {click: "з"}
       - {click: "и"}
       - {click: "й"}
       - {click: "к"}
-      - {click: K_back, width: 19}
+      - {click: K_symbolsA5x, width: 19}
       - {click: K_symbols70, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, width: 12.5}
@@ -2529,28 +2529,28 @@ preset_keyboards:
       - {click: "о"}
       - {click: "п"}
       - {click: "р"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "с"}
       - {click: "т"}
       - {click: "у"}
       - {click: "ф"}
       - {click: "х"}
       - {click: "ц"}
-      - {click: K_symbolsA4, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "ч"}
       - {click: "ш"}
       - {click: "щ"}
       - {click: "ъ"}
       - {click: "ы"}
       - {click: "ь"}
-      - {click: K_symbolsA5x, key_text_color: fyt, width: 19}
+      - {click: K_symbolsA4, width: 19}
       - {click: "э"}
       - {click: "ю"}
       - {click: "я"}
       - {click: ""}
       - {click: ""}
       - {click: ""}
-      - {click: K_back, width: 19}
+      - {click: K_symbolsA5x, key_text_color: fyt, width: 19}
       - {click: K_symbols70, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, width: 12.5}
@@ -2578,28 +2578,28 @@ preset_keyboards:
       - {click: "Ã"}
       - {click: "Ä"}
       - {click: "Å"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "Æ"}
       - {click: "Ç"}
       - {click: "È"}
       - {click: "É"}
       - {click: "Ê"}
       - {click: "Ë"}
-      - {click: K_symbolsB1, key_text_color: fyt, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "Ì"}
       - {click: "Í"}
       - {click: "Î"}
       - {click: "Ï"}
       - {click: "Ð"}
       - {click: "Ñ"}
-      - {click: K_symbolsB2x, width: 19}
+      - {click: K_symbolsB1, key_text_color: fyt, width: 19}
       - {click: "Ò"}
       - {click: "Ó"}
       - {click: "Ô"}
       - {click: "Õ"}
       - {click: "Ö"}
       - {click: "Ø"}
-      - {click: K_back, width: 19}
+      - {click: K_symbolsB2x, width: 19}
       - {click: K_symbols70, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, width: 12.5}
@@ -2627,28 +2627,28 @@ preset_keyboards:
       - {click: "Ü"}
       - {click: "Ý"}
       - {click: "Þ"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "Š"}
       - {click: "Ÿ"}
       - {click: "Œ"}
       - {click: ""}
       - {click: ""}
       - {click: ""}
-      - {click: K_symbolsB1, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "à"}
       - {click: "á"}
       - {click: "â"}
       - {click: "ã"}
       - {click: "ä"}
       - {click: "å"}
-      - {click: K_symbolsB3x, width: 19}
+      - {click: K_symbolsB1, width: 19}
       - {click: "æ"}
       - {click: "ç"}
       - {click: "è"}
       - {click: "é"}
       - {click: "ê"}
       - {click: "ë"}
-      - {click: K_back, width: 19}
+      - {click: K_symbolsB3x, width: 19}
       - {click: K_symbols70, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, width: 12.5}
@@ -2676,28 +2676,28 @@ preset_keyboards:
       - {click: "ï"}
       - {click: "ð"}
       - {click: "ñ"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "ò"}
       - {click: "ó"}
       - {click: "õ"}
       - {click: "ô"}
       - {click: "ö"}
       - {click: "ø"}
-      - {click: K_symbolsB2, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "ù"}
       - {click: "ú"}
       - {click: "û"}
       - {click: "ü"}
       - {click: "ý"}
       - {click: "þ"}
-      - {click: K_symbolsB3x, key_text_color: fyt, width: 19}
+      - {click: K_symbolsB2, width: 19}
       - {click: "š"}
       - {click: "ÿ"}
       - {click: "œ"}
       - {click: ""}
       - {click: ""}
       - {click: ""}
-      - {click: K_back, width: 19}
+      - {click: K_symbolsB3x, key_text_color: fyt, width: 19}
       - {click: K_symbols70, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, width: 12.5}
@@ -2725,28 +2725,28 @@ preset_keyboards:
       - {click: "ㅕ"}
       - {click: "ㅗ"}
       - {click: "ㅛ"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "ㅜ"}
       - {click: "ㅠ"}
       - {click: "ㅡ"}
       - {click: "ㅣ"}
       - {click: "ㅐ"}
       - {click: "ㅒ"}
-      - {click: K_symbolsC1, key_text_color: fyt, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "ㅔ"}
       - {click: "ㅖ"}
       - {click: "ㅘ"}
       - {click: "ㅙ"}
       - {click: "ㅚ"}
       - {click: "ㅝ"}
-      - {click: K_symbolsC2x, width: 19}
+      - {click: K_symbolsC1, key_text_color: fyt, width: 19}
       - {click: "ㅞ"}
       - {click: "ㅟ"}
       - {click: "ㅢ"}
       - {click: ""}
       - {click: ""}
       - {click: ""}
-      - {click: K_back, width: 19}
+      - {click: K_symbolsC2x, width: 19}
       - {click: K_symbols70, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, width: 12.5}
@@ -2774,28 +2774,28 @@ preset_keyboards:
       - {click: "ㄹ"}
       - {click: "ㅁ"}
       - {click: "ㅂ"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "ㅅ"}
       - {click: "ㅇ"}
       - {click: "ㅈ"}
       - {click: "ㅊ"}
       - {click: "ㅋ"}
       - {click: "ㅌ"}
-      - {click: K_symbolsC1, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "ㅍ"}
       - {click: "ㅎ"}
       - {click: "ㄲ"}
       - {click: "ㄸ"}
       - {click: "ㅚ"}
       - {click: "ㅆ"}
-      - {click: K_symbolsC3x, width: 19}
+      - {click: K_symbolsC1, width: 19}
       - {click: "ㅉ"}
       - {click: ""}
       - {click: ""}
       - {click: ""}
       - {click: ""}
       - {click: ""}
-      - {click: K_back, width: 19}
+      - {click: K_symbolsC3x, width: 19}
       - {click: K_symbols70, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, width: 12.5}
@@ -2823,28 +2823,28 @@ preset_keyboards:
       - {click: "㉣"}
       - {click: "㉤"}
       - {click: "㉥"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "㉦"}
       - {click: "㉧"}
       - {click: "㉨"}
       - {click: "㉩"}
       - {click: "㉪"}
       - {click: "㉫"}
-      - {click: K_symbolsC2, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "㉬"}
       - {click: "㉭"}
       - {click: "㉮"}
       - {click: "㉯"}
       - {click: "㉰"}
       - {click: "㉱"}
-      - {click: K_symbolsC4x, width: 19}
+      - {click: K_symbolsC2, width: 19}
       - {click: "㉲"}
       - {click: "㉳"}
       - {click: "㉴"}
       - {click: "㉵"}
       - {click: "㉶"}
       - {click: "㉷"}
-      - {click: K_back, width: 19}
+      - {click: K_symbolsC4x, width: 19}
       - {click: K_symbols70, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, width: 12.5}
@@ -2872,28 +2872,28 @@ preset_keyboards:
       - {click: "㉻"}
       - {click: ""}
       - {click: ""}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "㈀"}
       - {click: "㈁"}
       - {click: "㈂"}
       - {click: "㈃"}
       - {click: "㈄"}
       - {click: "㈅"}
-      - {click: K_symbolsC3, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "㈆"}
       - {click: "㈇"}
       - {click: "㈈"}
       - {click: "㈉"}
       - {click: "㈊"}
       - {click: "㈋"}
-      - {click: K_symbolsC5x, width: 19}
+      - {click: K_symbolsC3, width: 19}
       - {click: "㈌"}
       - {click: "㈍"}
       - {click: "㈎"}
       - {click: "㈏"}
       - {click: "㈐"}
       - {click: "㈑"}
-      - {click: K_back, width: 19}
+      - {click: K_symbolsC5x, width: 19}
       - {click: K_symbols70, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, width: 12.5}
@@ -2921,11 +2921,18 @@ preset_keyboards:
       - {click: "㈕"}
       - {click: "㈖"}
       - {click: "㈗"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "㈘"}
       - {click: "㈙"}
       - {click: "㈚"}
       - {click: "㈛"}
+      - {click: ""}
+      - {click: ""}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
       - {click: ""}
       - {click: ""}
       - {click: K_symbolsC4, width: 19}
@@ -2936,13 +2943,6 @@ preset_keyboards:
       - {click: ""}
       - {click: ""}
       - {click: K_symbolsC5x, key_text_color: fyt, width: 19}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: K_back, width: 19}
       - {click: K_symbols70, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, width: 12.5}
@@ -2970,28 +2970,28 @@ preset_keyboards:
       - {click: "i:"}
       - {click: "u:"}
       - {click: "ʌ"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "ɒ"}
       - {click: "ə"}
       - {click: "ɪ"}
       - {click: "ʊ"}
       - {click: "e"}
       - {click: "æ"}
-      - {click: K_symbolsD1, key_text_color: fyt, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "eɪ"}
       - {click: "aɪ"}
       - {click: "ɔɪ"}
       - {click: "ɪə"}
       - {click: "eə"}
       - {click: "ʊə"}
-      - {click: K_symbolsD2x, width: 19}
+      - {click: K_symbolsD1, key_text_color: fyt, width: 19}
       - {click: "əʊ"}
       - {click: "aʊ"}
       - {click: "p"}
       - {click: "t"}
       - {click: "k"}
       - {click: "f"}
-      - {click: K_back, width: 19}
+      - {click: K_symbolsD2x, width: 19}
       - {click: K_symbols70, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, width: 12.5}
@@ -3019,28 +3019,28 @@ preset_keyboards:
       - {click: "d"}
       - {click: "g"}
       - {click: "v"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_back, width: 19}
       - {click: "ð"}
       - {click: "z"}
       - {click: "ʃ"}
       - {click: "h"}
       - {click: "ts"}
       - {click: "tʃ"}
-      - {click: K_symbolsD1, width: 19}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "j"}
       - {click: "tr"}
       - {click: "ʒ"}
       - {click: "r"}
       - {click: "dz"}
       - {click: "dʒ"}
-      - {click: K_symbolsD2x, key_text_color: fyt, width: 19}
+      - {click: K_symbolsD1, width: 19}
       - {click: "dr"}
       - {click: "w"}
       - {click: "m"}
       - {click: "n"}
       - {click: "ŋ"}
       - {click: "l"}
-      - {click: K_back, width: 19}
+      - {click: K_symbolsD2x, key_text_color: fyt, width: 19}
       - {click: K_symbols70, width: 12.5}
       - {click: K_symbols80, width: 12.5}
       - {click: K_symbols90, width: 12.5}
