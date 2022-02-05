@@ -18,6 +18,7 @@ switches:
     reset: 0
     states: [ 中, En ]
   - name: full_shape
+    reset: 0
     states: [ 半, 全 ]
   - name: extended_charset
     reset: 0
@@ -31,7 +32,6 @@ switches:
     reset: 0
     states: [ "无符", "符" ]
   - name: emoji_suggestion
-    reset: 0
     states: [ 😑️, 😁️ ]
 
 engine:

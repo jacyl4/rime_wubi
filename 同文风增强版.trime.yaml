@@ -18,12 +18,12 @@ candidate_setting:
 # -------调整完毕，如果出现上下档字符偏离键位，可调节下面项------
 keyboard_height:
 # ----------键盘高度调整------------
-  A: &VJG 53         #主辅键盘键高  自定
-  B: &VJM 53        #主辅键盘末行键高  B≈A，如主键盘和符号键盘不等高，调整此数
-  C: &FJG 50        #符号键盘键高  (FJG × 5) + (FJH × 6) = (VJG × 4) + (VJH × 5) 解方程可以求出FJG = 50
-  E: &DsymY 2.0           #主键盘上档文字纵向位置调节，负数上移，下同
+  A: &VJG 44         #主辅键盘键高  自定
+  B: &VJM 44        #主辅键盘末行键高  B≈A，如主键盘和符号键盘不等高，调整此数
+  C: &FJG 40        #符号键盘键高  (FJG × 5) + (FJH × 6) = (VJG × 4) + (VJH × 5) 解方程可以求出FJG = 50
+  E: &DsymY 0.5           #主键盘上档文字纵向位置调节，负数上移，下同
   F: &DsymX 0             #主键盘上档文字横向位置调节，负数左移
-  G: &DtextY 0              #主键盘字母纵向位置调节
+  G: &DtextY 1              #主键盘字母纵向位置调节
   H: &VJtextY 0            #助记键盘字母纵向位置调节
   I: &VJhintY -2            #助记键盘韵母纵向位置调节
   J: &VJtextY -1            #助记键盘字母纵向位置调节，一般不需要调节
@@ -31,22 +31,22 @@ keyboard_height:
   L: &CQ_symbol 0             #助记键盘符号（长按、上排文字）偏移
   M: &CQ_hintY -3            #助记符号（下排文字、下档文字）纵向位置调节
   N: &CQ_text_size 20
-  H: &VJG_Other 58
+  H: &VJG_Other 44
   I: &NUM_SYM_W 15.5   # 数字  符号键盘  宽度
 #-------调节尽量以配色中键高最低的配色为标准------
 other:
 #主键盘结构（四行）
-  a: &VJH 10         #主键盘行距  建议不动
+  a: &VJH 6         #主键盘行距  建议不动
   b: &VJL 4         #主键盘列距
-  c: &VJY 12         #主键盘圆角
+  c: &VJY 12        #主键盘圆角
 #符号键盘结构（五行）
-  d: &FJH 2         #符号键盘行距  建议不动
+  d: &FJH 1         #符号键盘行距  建议不动
   e: &FJL 2         #符号键盘列距
-  f: &FJY 12         #符号键盘圆角
+  f: &FJY 12        #符号键盘圆角
 #数字键盘结构（四行）
   g: &NJH 6         #数字键盘行距  建议不动
   h: &NJL 6         #数字键盘列距
-  i: &NJY 12         #数字键盘圆角
+  i: &NJY 12        #数字键盘圆角
 
 
 
@@ -115,7 +115,7 @@ style:
     max_width: 360 #最大宽度，超过则自动换行
     max_height: 300 #最大高度
     min_width: 0 #最小宽度
-    min_height: 50 #最小高度
+    min_height: 44 #最小高度
     margin_x: 5 #水平边距
     margin_y: 5 #竖直边距
     line_spacing: 0 #候选词的行间距(px)
@@ -133,7 +133,7 @@ style:
   key_font: symbol.ttf #键盘字体
   key_height: *FJG #键高
   key_long_text_size: 15 #长标签字号
-  key_text_size: 21 #键字号
+  key_text_size: 18 #键字号
   key_width: 10.0 #键宽，占屏幕宽的百分比
   keyboards: [.default, default, luna_jiugong, terra_jiugong, default_jiugong_letter, jiugong_number, luna_bihua, terra_jiugong, default_symbol, jiugong_use, defaultVJ5, defaultVJ6, letter, letterfh, number, use, menu, menux, symbols, symbols01, symbols11, symbols12, symbols13, symbols14, symbols21, symbols22, symbols31, symbols32, symbols33, symbols34, symbols35, symbols36, symbols41, symbols42, symbols43, symbols44, symbols51, symbols52, symbols53, symbols54, symbols55, symbols56, symbols61, symbols62, symbols63, symbols64, symbols65, symbols71, symbols72, symbols73, symbols74, symbols75, symbols81, symbols82, symbols83, symbols91, symbols92, symbols93, symbolsA1, symbolsA2, symbolsA3, symbolsA4, symbolsA5, symbolsB1, symbolsB2, symbolsB3, symbolsC1, symbolsC2, symbolsC3, symbolsC4, symbolsC5, symbolsD1, symbolsD2] #键盘配置
   label_text_size: 22 #标签字号
