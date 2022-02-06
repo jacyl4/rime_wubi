@@ -4,14 +4,20 @@ patch:
       ascii_mode: true
     conhost.exe:
       ascii_mode: true
+    OpenConsole.exe:
+      ascii_mode: true
+    windowsterminal.exe:
+      ascii_mode: true
 
   style:
     color_scheme: Jrime
-    font_face: Microsoft YaHei              # 候选词字体
+    font_face: "Microsoft YaHei"            # 候选词字体
     font_point: 14                          # 候选字词大小
     horizontal: true                        # 水平排列
     inline_preedit: true                    # 单行显示，false双行显示
-    display_tray_icon: true
+    preedit_type: composition
+    display_tray_icon: false
+    label_format: "%s."
     layout:
       margin_x: 5
       margin_y: 5
