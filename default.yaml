@@ -2,8 +2,6 @@
 # encoding: utf-8
 
 schema_list:
-
-schema_list:
   - schema: wubi_pinyin
 ascii_composer:
   good_old_caps_lock: true
@@ -13,7 +11,21 @@ ascii_composer:
     Control_L: noop
     Control_R: noop
     Caps_Lock: clear
-    Eisu_toggle: clear
+    Eisu_toggle: commit_code
+switcher:
+  abbreviate_options: true
+  caption: "〔方案選單〕"
+  fold_options: true
+  hotkeys:
+    - "Control+grave"
+    - "Control+Shift+grave"
+    - F4
+  option_list_separator: "／"
+  save_options:
+    - full_shape
+    - ascii_punct
+    - simplification
+    - extended_charset
 
 menu:
   page_size: 8
@@ -131,13 +143,3 @@ recognizer:
     email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
     uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
-
-ascii_composer:
-  good_old_caps_lock: true
-  switch_key:
-    Shift_L: inline_ascii
-    Shift_R: commit_text
-    Control_L: noop
-    Control_R: noop
-    Caps_Lock: clear
-    Eisu_toggle: clear
