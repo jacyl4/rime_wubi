@@ -4,9 +4,11 @@ patch:
       ascii_mode: true
     conhost.exe:
       ascii_mode: true
-    OpenConsole.exe:
+    openconsole.exe:
       ascii_mode: true
     windowsterminal.exe:
+      ascii_mode: true
+    mobaxterm.exe:
       ascii_mode: true
 
   style:
