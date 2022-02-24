@@ -25,7 +25,7 @@ switches:
     states: [ 常, 扩 ]
   - name: ascii_punct
     states: [ 。，, ．， ]
-  - name: traditional_chinese
+  - name: zh_simp_s2t
     reset: 0
     states: [ 简, 繁 ]
   - name: symbol_support
@@ -90,17 +90,17 @@ reverse_lookup:
     - xform/([jqxy])v/$1u/
 
 simplifier:
-  opencc_config: s2t.json
   option_name: zh_simp_s2t
+  opencc_config: s2t.json
 
 symbol_support:
-  opencc_config: symbol.json
   option_name: symbol_support
+  opencc_config: symbol.json
   tips: all
 
 emoji_suggestion:
-  opencc_config: emoji.json
   option_name: emoji_suggestion
+  opencc_config: emoji.json
   tips: all
 
 punctuator:
