@@ -388,10 +388,10 @@ preset_keyboards:
       - {click: 9, key_back_color: szbdb, swipe_up: 9, key_text_size: 20}
       - {click: space3, width: *NUM_SYM_W, key_back_color: szgnb, hilited_key_back_color: szgnh, swipe_up: 0, key_text_size: 20}
 
-      - {click: ",", label: "，", width: *NUM_SYM_W, key_text_offset_x: 3, key_symbol_offset_x: -12, key_symbol_offset_y: 20, long_click: "?", key_symbol_color: key_symbol_color, key_back_color: szbdb, key_text_size: 16}
-      - {click: ".", label: "。", key_text_offset_x: 3, key_symbol_offset_x: -12, key_symbol_offset_y: 18, long_click: "!", key_symbol_color: key_symbol_color, key_back_color: szbdb, key_text_size: 16}
+      - {click: "%", width: *NUM_SYM_W, key_text_offset_x: 3, key_symbol_offset_x: -12, key_symbol_offset_y: 18, long_click: "=", key_symbol_color: key_symbol_color, key_back_color: szbdb, key_text_size: 16}
+      - {click: ",", label: "，", key_text_offset_x: 3, key_symbol_offset_x: -12, key_symbol_offset_y: 20, long_click: "?", key_symbol_color: key_symbol_color, key_back_color: szbdb, key_text_size: 16}
       - {click: 0, key_back_color: szbdb, swipe_up: 0, key_text_size: 20}
-      - {click: "%", key_text_offset_x: 3, key_symbol_offset_x: -12, key_symbol_offset_y: 18, long_click: "=", key_symbol_color: key_symbol_color, key_back_color: szbdb, key_text_size: 16}
+      - {click: ".", label: "。", key_text_offset_x: 3, key_symbol_offset_x: -12, key_symbol_offset_y: 18, long_click: "!", key_symbol_color: key_symbol_color, key_back_color: szbdb, key_text_size: 16}
       - {click: Return, width: *NUM_SYM_W, key_back_color: szhcb, hilited_key_back_color: szhch, key_text_color: szhct, hilited_key_text_color: szhct, key_symbol_color: hcs, key_text_size: 16}
 
   menux:
