@@ -80,7 +80,7 @@ reverse_lookup:
     - xlit/hspnz/一丨丿丶乙/
 
 punctuator:
-  import_preset: symbols
+  import_preset: default
 
 key_binder:
   import_preset: default
@@ -88,8 +88,5 @@ key_binder:
 recognizer:
   import_preset: default
   patterns:
-    # hack: to enable "/fh" style symbols, '/' must be mapped to a [list].
-    # so those who have customized '/' for direct commit won't be affected by
-    # this change.
     punct: "^/([0-9]+[a-z]*|[a-z]+)$"
     reverse_lookup: "`[a-z]*'?$"

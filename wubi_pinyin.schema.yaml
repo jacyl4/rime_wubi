@@ -104,7 +104,7 @@ emoji_suggestion:
   tips: all
 
 punctuator:
-  import_preset: symbols
+  import_preset: default
 
 key_binder:
   import_preset: default
