@@ -3,14 +3,14 @@
   "segmentation": {
     "type": "mmseg",
     "dict": {
-      "type": "ocd2",
-      "file": "TWVariants.ocd2"
+      "type": "text",
+      "file": "TWVariants.txt"
     }
   },
   "conversion_chain": [{
     "dict": {
-      "type": "ocd2",
-      "file": "TWVariants.ocd2"
+      "type": "text",
+      "file": "TWVariants.txt"
     }
   }]
 }

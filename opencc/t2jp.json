@@ -3,14 +3,14 @@
   "segmentation": {
     "type": "mmseg",
     "dict": {
-      "type": "ocd2",
-      "file": "JPVariants.ocd2"
+      "type": "text",
+      "file": "JPVariants.txt"
     }
   },
   "conversion_chain": [{
     "dict": {
-      "type": "ocd2",
-      "file": "JPVariants.ocd2"
+      "type": "text",
+      "file": "JPVariants.txt"
     }
   }]
 }

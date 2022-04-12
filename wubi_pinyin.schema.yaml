@@ -25,7 +25,7 @@ switches:
     states: [ 常, 扩 ]
   - name: ascii_punct
     states: [ 。，, ．， ]
-  - name: zh_simp_s2t
+  - name: traditional_chinese
     reset: 0
     states: [ 简, 繁 ]
   - name: symbol_support
@@ -59,7 +59,6 @@ engine:
     - simplifier@symbol_support
     - simplifier@emoji_suggestion
     - simplifier
-    - uniquifier
 
 speller:
   delimiter: " ;'"
@@ -68,12 +67,16 @@ speller:
 translator:
   dictionary: wubi86
   prism: wubi_pinyin
-  enable_charset_filter: true
-  enable_sentence: true
-  enable_encoder: true
-  encode_commit_history: true
-  disable_user_dict_for_patterns:
-    - "^z.*$"
+  enable_charset_filter: true           # 开启字符集过滤
+  enable_completion: true               # 是否显示编码未输入完整的词条
+  enable_sentence: false                # 句子输入模式
+  enable_user_dict: false               # 是否开启用户词典（用户词典记录动态字词频，用户词）
+  enable_encoder: false
+  preedit_format:                       # 上屏码自定义
+#    - xform/.+//
+  comment_format:                       # 提示码自定义
+#    - xform/.+//                        # 配置：消除所有候选词后的提示码
+
 
 abc_segmentor:
   extra_tags:
@@ -90,7 +93,7 @@ reverse_lookup:
     - xform/([jqxy])v/$1u/
 
 simplifier:
-  option_name: zh_simp_s2t
+  option_name: traditional_chinese
   opencc_config: s2t.json
 
 symbol_support:
@@ -104,7 +107,7 @@ emoji_suggestion:
   tips: all
 
 punctuator:
-  import_preset: default
+  import_preset: symbols
 
 key_binder:
   import_preset: default

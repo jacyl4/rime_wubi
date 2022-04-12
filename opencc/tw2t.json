@@ -3,19 +3,19 @@
   "segmentation": {
     "type": "mmseg",
     "dict": {
-      "type": "ocd2",
-      "file": "TWVariantsRevPhrases.ocd2"
+      "type": "text",
+      "file": "TWVariantsRevPhrases.txt"
     }
   },
   "conversion_chain": [{
     "dict": {
       "type": "group",
       "dicts": [{
-        "type": "ocd2",
-        "file": "TWVariantsRevPhrases.ocd2"
+        "type": "text",
+        "file": "TWVariantsRevPhrases.txt"
       }, {
-        "type": "ocd2",
-        "file": "TWVariantsRev.ocd2"
+        "type": "text",
+        "file": "TWVariantsRev.txt"
       }] 
     }
   }]
