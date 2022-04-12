@@ -465,7 +465,8 @@ preset_keyboards:
       - {click: space3, key_back_color: szgnb, hilited_key_back_color: szgnh}
       - {click: Clear, key_back_color: szgnb, hilited_key_back_color: szgnh, key_text_size: 16}
       - {click: Delete, width: *NUM_SYM_W, key_back_color: szgnb, hilited_key_back_color: szgnh, key_text_size: 16} #share_text可将长按设为分享
-
+      # 第五行
+      - {width: 100, height: 2}
 
   menu:
     ascii_mode: 0
