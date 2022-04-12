@@ -28,6 +28,12 @@ switches:
   - name: traditional_chinese
     reset: 0
     states: [ 简, 繁 ]
+  - name: symbol_support
+    reset: 0
+    states: [ "无符", "符" ]
+  - name: emoji_suggestion
+    reset: 1
+    states: [ 😔, 😀 ]
 
 engine:
   processors:
@@ -50,6 +56,8 @@ engine:
     - reverse_lookup_translator
     - table_translator
   filters:
+    - simplifier@symbol_support
+    - simplifier@emoji_suggestion
     - simplifier
 
 speller:
@@ -83,6 +91,14 @@ reverse_lookup:
 simplifier:
   option_name: traditional_chinese
   opencc_config: s2t.json
+
+symbol_support:
+  option_name: symbol_support
+  opencc_config: symbol.json
+  
+emoji_suggestion:
+  option_name: emoji_suggestion
+  opencc_config: es.json
 
 punctuator:
   import_preset: symbols
