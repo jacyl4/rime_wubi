@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 config_version: "3.0"
-name: 預設 #方案名称
+name: Zimple #方案名称
 author: 
 
 # 键盘候选
