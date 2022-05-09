@@ -18,10 +18,10 @@ candidate_setting:
 # -------调整完毕，如果出现上下档字符偏离键位，可调节下面项------
 keyboard_height:
 # ----------键盘高度调整------------
-  A: &VJG 38        #主辅键盘键高  自定
-  H: &VJG_Other 38
-  B: &VJM 38        #主辅键盘末行键高  B≈A，如主键盘和符号键盘不等高，调整此数
-  C: &FJG 36        #符号键盘键高  (FJG × 5) + (FJH × 6) = (VJG × 4) + (VJH × 5) 解方程可以求出FJG = 50
+  A: &VJG 42        #主辅键盘键高  自定
+  H: &VJG_Other 42
+  B: &VJM 42        #主辅键盘末行键高  B≈A，如主键盘和符号键盘不等高，调整此数
+  C: &FJG 38        #符号键盘键高  (FJG × 5) + (FJH × 6) = (VJG × 4) + (VJH × 5) 解方程可以求出FJG = 50
   E: &DsymY 0.5           #主键盘上档文字纵向位置调节，负数上移，下同
   F: &DsymX 0             #主键盘上档文字横向位置调节，负数左移
   G: &DtextY 1            #主键盘字母纵向位置调节
@@ -40,7 +40,7 @@ other:
   b: &VJL 6         #主键盘列距
   c: &VJY 12        #主键盘圆角
 #符号键盘结构（五行）
-  d: &FJH 2         #符号键盘行距  建议不动
+  d: &FJH 3         #符号键盘行距  建议不动
   e: &FJL 2         #符号键盘列距
   f: &FJY 12        #符号键盘圆角
 #数字键盘结构（四行）
@@ -348,7 +348,7 @@ preset_keyboards:
       - {click: K_number_Ch, long_click: liquid_keyboard_symbol, swipe_down: K_menu, composing: delimiterD, key_symbol_offset_x: 0, key_back_color: gnb, hilited_key_back_color: gnh, key_symbol_color: gns, width: 15, key_text_size: 16} #方案选择
       - {click: Return, key_symbol_offset_x: 0, key_back_color: hcb, key_text_color: hct, hilited_key_text_color: hcht, key_symbol_color: hcs, hilited_key_back_color: hch, width: *NUM_SYM_W, key_text_size: 16}
       # 第五行
-      - {width: 100, height: 2}
+      - {width: 100, height: 5}
 
   letter:
     __include: /preset_keyboards/default
@@ -399,7 +399,7 @@ preset_keyboards:
       - {click: ".", label: "。", key_text_offset_x: 3, key_symbol_offset_x: -12, key_symbol_offset_y: 18, long_click: "!", key_symbol_color: key_symbol_color, key_back_color: szbdb, key_text_size: 16}
       - {click: Return, width: *NUM_SYM_W, key_back_color: szhcb, hilited_key_back_color: szhch, key_text_color: szhct, hilited_key_text_color: szhct, key_symbol_color: hcs, key_text_size: 16}
       # 第五行
-      - {width: 100, height: 2}
+      - {width: 100, height: 5}
 
   menux:
     __include: /preset_keyboards/menu
@@ -466,7 +466,7 @@ preset_keyboards:
       - {click: Clear, key_back_color: szgnb, hilited_key_back_color: szgnh, key_text_size: 16}
       - {click: Delete, width: *NUM_SYM_W, key_back_color: szgnb, hilited_key_back_color: szgnh, key_text_size: 16} #share_text可将长按设为分享
       # 第五行
-      - {width: 100, height: 2}
+      - {width: 100, height: 5}
 
   menu:
     ascii_mode: 0

@@ -17,7 +17,7 @@ patch:
       - extended_charset
 
   menu:
-    page_size: 8
+    page_size: 6
 
   key_binder:
     bindings:
