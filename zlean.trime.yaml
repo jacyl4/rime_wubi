@@ -349,7 +349,7 @@ preset_keyboards:
       - {click: Return, key_symbol_offset_x: 0, key_back_color: hcb, key_text_color: hct, hilited_key_text_color: hcht, key_symbol_color: hcs, hilited_key_back_color: hch, width: *NUM_SYM_W, key_text_size: 16}
       # 第五行
       - {width: 84.5}
-      - {click: Hide, key_back_color: 0x00000000, width: *NUM_SYM_W, height: 30, key_text_size: 16}
+      - {click: Hide, key_back_color: 0x00000000, hilited_key_back_color: 0x00000000, width: *NUM_SYM_W, height: 30, key_text_size: 16}
 
   letter:
     __include: /preset_keyboards/default
@@ -401,7 +401,7 @@ preset_keyboards:
       - {click: Return, width: *NUM_SYM_W, key_back_color: szhcb, hilited_key_back_color: szhch, key_text_color: szhct, hilited_key_text_color: szhct, key_symbol_color: hcs, key_text_size: 16}
       # 第五行
       - {width: 84.5}
-      - {click: Hide, key_back_color: 0x00000000, width: *NUM_SYM_W, height: 30, key_text_size: 16}
+      - {click: Hide, key_back_color: 0x00000000, hilited_key_back_color: 0x00000000, width: *NUM_SYM_W, height: 30, key_text_size: 16}
 
   menux:
     __include: /preset_keyboards/menu
@@ -469,7 +469,7 @@ preset_keyboards:
       - {click: Delete, width: *NUM_SYM_W, key_back_color: szgnb, hilited_key_back_color: szgnh, key_text_size: 16} #share_text可将长按设为分享
       # 第五行
       - {width: 84.5}
-      - {click: Hide, key_back_color: 0x00000000, width: *NUM_SYM_W, height: 30, key_text_size: 16}
+      - {click: Hide, key_back_color: 0x00000000, hilited_key_back_color: 0x00000000, width: *NUM_SYM_W, height: 30, key_text_size: 16}
 
   menu:
     ascii_mode: 0
