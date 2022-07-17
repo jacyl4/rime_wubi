@@ -15,7 +15,7 @@ patch:
     color_scheme: Jrime
     font_face: "Microsoft YaHei"            # 候选词字体
     font_point: 14                          # 候选字词大小
-    horizontal: true                        # 水平排列
+    horizontal: false                       # 水平排列
     inline_preedit: true                    # 单行显示，false双行显示
     preedit_type: composition
     display_tray_icon: false

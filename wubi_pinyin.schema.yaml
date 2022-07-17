@@ -101,7 +101,7 @@ emoji_suggestion:
   opencc_config: es.json
 
 punctuator:
-  import_preset: symbols
+  import_preset: default
 
 key_binder:
   import_preset: default
