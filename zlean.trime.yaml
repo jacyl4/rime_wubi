@@ -448,7 +448,7 @@ preset_keyboards:
       - {click: Home, key_back_color: szbdb, key_text_size: 16}
       - {click: Up, key_back_color: szbdb, key_text_size: 16}
       - {click: End, key_back_color: szbdb, key_text_size: 16}
-      - {click: BackSpace, width: *NUM_SYM_W, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst, key_text_size: 20}
+      - {click: K_back, width: *NUM_SYM_W, key_back_color: szgnb, hilited_key_back_color: szgnh, key_text_size: 16}
       # 第2行
       - {click: cut, width: *NUM_SYM_W, key_back_color: szgnb, hilited_key_back_color: szgnh}
       - {click: Left, key_back_color: szbdb}
@@ -460,7 +460,7 @@ preset_keyboards:
       - {click: undo, key_back_color: szbdb, key_text_size: 30}
       - {click: Down, key_back_color: szbdb}
       - {click: redo, key_back_color: szbdb, key_text_size: 30}
-      - {click: K_back, width: *NUM_SYM_W, key_back_color: szgnb, hilited_key_back_color: szgnh, key_text_size: 16}
+      - {click: BackSpace, width: *NUM_SYM_W, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst, key_text_size: 20}
       # 第4行
       - {click: paste, width: *NUM_SYM_W, key_back_color: szgnb, hilited_key_back_color: szgnh}
       - {click: Tab2, key_back_color: szgnb, hilited_key_back_color: szgnh, key_text_size: 16}
