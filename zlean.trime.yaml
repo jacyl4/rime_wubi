@@ -348,8 +348,9 @@ preset_keyboards:
       - {click: K_number_Ch, long_click: liquid_keyboard_symbol, swipe_down: K_menu, composing: delimiterD, key_symbol_offset_x: 0, key_back_color: gnb, hilited_key_back_color: gnh, key_symbol_color: gns, width: 15, key_text_size: 16} #方案选择
       - {click: Return, key_symbol_offset_x: 0, key_back_color: hcb, key_text_color: hct, hilited_key_text_color: hcht, key_symbol_color: hcs, hilited_key_back_color: hch, width: *NUM_SYM_W, key_text_size: 16}
       # 第五行
-      - {width: 84.5}
+      - {click: "", key_back_color: 0x00000000, hilited_key_back_color: 0x00000000, width: 42.25, height: 30}
       - {click: Hide, key_back_color: 0x00000000, hilited_key_back_color: 0x00000000, width: *NUM_SYM_W, height: 30, key_text_size: 16}
+      - {click: "", key_back_color: 0x00000000, hilited_key_back_color: 0x00000000, width: 42.25, height: 30}
 
   letter:
     __include: /preset_keyboards/default
@@ -400,8 +401,9 @@ preset_keyboards:
       - {click: ".", label: "。", key_text_offset_x: 3, key_symbol_offset_x: -12, key_symbol_offset_y: 18, long_click: "!", key_symbol_color: key_symbol_color, key_back_color: szbdb, key_text_size: 16}
       - {click: Return, width: *NUM_SYM_W, key_back_color: szhcb, hilited_key_back_color: szhch, key_text_color: szhct, hilited_key_text_color: szhct, key_symbol_color: hcs, key_text_size: 16}
       # 第五行
-      - {width: 84.5}
+      - {click: "", key_back_color: 0x00000000, hilited_key_back_color: 0x00000000, width: 42.25, height: 30}
       - {click: Hide, key_back_color: 0x00000000, hilited_key_back_color: 0x00000000, width: *NUM_SYM_W, height: 30, key_text_size: 16}
+      - {click: "", key_back_color: 0x00000000, hilited_key_back_color: 0x00000000, width: 42.25, height: 30}
 
   menux:
     __include: /preset_keyboards/menu
@@ -468,8 +470,9 @@ preset_keyboards:
       - {click: Clear, key_back_color: szgnb, hilited_key_back_color: szgnh, key_text_size: 16}
       - {click: Delete, width: *NUM_SYM_W, key_back_color: szgnb, hilited_key_back_color: szgnh, key_text_size: 16} #share_text可将长按设为分享
       # 第五行
-      - {width: 84.5}
+      - {click: "", key_back_color: 0x00000000, hilited_key_back_color: 0x00000000, width: 42.25, height: 30}
       - {click: Hide, key_back_color: 0x00000000, hilited_key_back_color: 0x00000000, width: *NUM_SYM_W, height: 30, key_text_size: 16}
+      - {click: "", key_back_color: 0x00000000, hilited_key_back_color: 0x00000000, width: 42.25, height: 30}
 
   menu:
     ascii_mode: 0
