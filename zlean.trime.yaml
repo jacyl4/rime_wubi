@@ -80,6 +80,17 @@ colors:
   25: &COLOR_DARK_GRAY 0xff6f7b83 #深灰
   26: &COLOR_DARK_SEA_BLUE_P 0xff025281 #深暗海蓝
   27: &COLOR_XPERIA_CANDIDATE_GREEN 0xff00a886 #SONY绿
+  28: &COLOR_GRUVBOX_BG 0xff282828 #Gruvbox背景色
+  29: &COLOR_GRUVBOX_BG_DARK 0xff1d2021 #Gruvbox更深背景色
+  30: &COLOR_GRUVBOX_FG 0xffebdbb2 #Gruvbox前景色（降低饱和度的浅米色）
+  31: &COLOR_GRUVBOX_RED 0xffcc241d #Gruvbox红色（BGR顺序，降低饱和度）
+  32: &COLOR_GRUVBOX_GREEN 0xff98971a #Gruvbox绿色（BGR顺序，降低饱和度）
+  33: &COLOR_GRUVBOX_YELLOW 0xffd79921 #Gruvbox黄色（BGR顺序，降低饱和度）
+  34: &COLOR_GRUVBOX_BLUE 0xff458588 #Gruvbox蓝色（BGR顺序，降低饱和度）
+  35: &COLOR_GRUVBOX_PURPLE 0xffb16286 #Gruvbox紫色（BGR顺序，降低饱和度）
+  36: &COLOR_GRUVBOX_AQUA 0xff689d6a #Gruvbox青色（BGR顺序，降低饱和度）
+  37: &COLOR_GRUVBOX_GRAY 0xff928374 #Gruvbox灰色（BGR顺序）
+  38: &COLOR_GRUVBOX_ORANGE 0xffd65d0e #Gruvbox橙色（BGR顺序，降低饱和度）
 
 
 #界面风格、功能开关
@@ -199,6 +210,132 @@ fallback_colors:
 #配色方案
 preset_color_schemes:
 #--------配色开始----------------#
+  gruvbox_dark:
+    name: "Gruvbox Dark"
+    author: "JacyL4"
+    # 悬浮窗
+    border_color: 0x1d2021 #悬浮窗边框（深色背景）
+    text_color: 0xebdbb2 #悬浮窗编码（浅米色#ebdbb2）
+    text_back_color: 0x282828 #悬浮窗背景（深灰褐色背景#282828）
+    hilited_text_color: 0xebdbb2 #悬浮窗高亮编码（浅米色#ebdbb2）
+    label_color: 0x7d6c5c #悬浮窗候选项序号（暗灰色#7d6c5c）
+    hilited_back_color: 0x32302f #悬浮窗高亮编码背景（稍亮的背景色#32302f）
+    # 候选区
+    back_color: 0x282828 #候选区背景（深灰褐色背景#282828）
+    candidate_separator_color: 0x00000000 #候选区分隔颜色（透明）
+    candidate_text_color: 0xebdbb2 # 候选区文本颜色（浅米色#ebdbb2）
+    comment_text_color: 0x7d6c5c # 候选区编码文本颜色（暗灰色#7d6c5c）
+    hilited_candidate_back_color: 0xd79921 # 候选区高亮背景颜色（Gruvbox黄色#d79921）
+    hilited_candidate_text_color: 0x282828 # 候选区高亮文本颜色（Gruvbox深色#282828）
+    hilited_comment_text_color: 0x282828 # 候选区高亮编码文本颜色（Gruvbox深色#282828）
+    # 键盘
+    keyboard_back_color: 0x1d2021 #键盘背景颜色（深色背景）
+    # 正常按键
+    key_back_color: 0x282828 #按键背景颜色（深灰褐色背景）
+    key_border_color: 0x00000000 #按键边框颜色（透明）
+    key_symbol_color: 0x7d6c5c # 按键符号颜色（暗灰色#7d6c5c）
+    key_text_color: 0xebdbb2 # 按键文本颜色（浅米色#ebdbb2）
+    hilited_key_back_color: 0x7d6c5c #按键激活背景颜色（暗灰色#7d6c5c）
+    hilited_key_symbol_color: 0xebdbb2 #按键激活符号颜色（浅米色#ebdbb2）
+    hilited_key_text_color: 0xebdbb2 #按键激活文本颜色（浅米色#ebdbb2）
+    # 功能键，shift常态
+    off_key_back_color: 0x1d2021 #功能键背景颜色（深色背景）
+    off_key_text_color: 0xebdbb2 #功能键文本颜色（浅米色#ebdbb2）
+    hilited_off_key_back_color: 0x7d6c5c #激活功能键背景颜色（暗灰色#7d6c5c）
+    hilited_off_key_text_color: 0xebdbb2 #激活功能键文本颜色（浅米色#ebdbb2）
+    # shift激活
+    on_key_back_color: 0x7d6c5c # 背景颜色（暗灰色#7d6c5c）
+    on_key_text_color: 0x1d2021 # 文本颜色（深色背景）
+    hilited_on_key_back_color: 0x7d6c5c # 激活背景颜色（暗灰色#7d6c5c）
+    hilited_on_key_text_color: 0x1d2021 # 激活文本颜色（深色背景）
+    # 按键下去气泡
+    preview_back_color: *COLOR_GRUVBOX_BG_DARK
+    preview_text_color: *COLOR_GRUVBOX_FG
+    border_color: *COLOR_GRUVBOX_BG_DARK #悬浮窗边框
+    text_color: *COLOR_GRUVBOX_FG #悬浮窗编码
+    text_back_color: *COLOR_GRUVBOX_BG #悬浮窗背景
+    hilited_text_color: *COLOR_GRUVBOX_FG #悬浮窗高亮编码
+    label_color: *COLOR_GRUVBOX_FG #悬浮窗候选项序号
+    hilited_back_color: *COLOR_GRUVBOX_BG_DARK #悬浮窗高亮编码背景
+    # 候选区
+    back_color: *COLOR_GRUVBOX_BG #候选区背景状态栏(无障碍)
+    candidate_separator_color: *COLOR_TRANSPARENT #候选区分隔颜色
+    candidate_text_color: *COLOR_GRUVBOX_FG # 候选区文本颜色
+    comment_text_color: *COLOR_GRUVBOX_BLUE # 候选区编码文本颜色
+    hilited_candidate_back_color: *COLOR_GRUVBOX_YELLOW # 候选区高亮背景颜色
+    hilited_candidate_text_color: *COLOR_GRUVBOX_BG_DARK # 候选区高亮文本颜色
+    hilited_comment_text_color: *COLOR_GRUVBOX_BG_DARK # 候选区高亮编码文本颜色
+    # 键盘
+    keyboard_back_color: *COLOR_GRUVBOX_BG_DARK #键盘背景颜色
+    # 正常按键
+    key_back_color: *COLOR_GRUVBOX_BG #按键背景颜色
+    key_border_color: *COLOR_TRANSPARENT #按键边框颜色
+    key_symbol_color: *COLOR_GRUVBOX_AQUA # 按键符号颜色
+    key_text_color: *COLOR_GRUVBOX_FG # 按键文本颜色
+    hilited_key_back_color: *COLOR_GRUVBOX_GRAY #按键激活背景颜色
+    hilited_key_symbol_color: *COLOR_GRUVBOX_FG #按键激活符号颜色
+    hilited_key_text_color: *COLOR_GRUVBOX_FG #按键激活文本颜色
+    # 功能键，shift常态
+    off_key_back_color: *COLOR_GRUVBOX_BG_DARK #功能键，shift常态  背景颜色
+    off_key_text_color: *COLOR_GRUVBOX_FG #功能键，shift常态  文本颜色
+    hilited_off_key_back_color: *COLOR_GRUVBOX_GRAY #激活功能键，shift常态  背景颜色
+    hilited_off_key_text_color: *COLOR_GRUVBOX_FG #激活功能键，shift常态  文本颜色
+    # shift激活
+    on_key_back_color: *COLOR_GRUVBOX_AQUA # 背景颜色
+    on_key_text_color: *COLOR_GRUVBOX_BG_DARK # 文本颜色
+    hilited_on_key_back_color: *COLOR_GRUVBOX_BLUE
+    hilited_on_key_text_color: *COLOR_GRUVBOX_BG_DARK
+    # 按键下去气泡
+    preview_back_color: *COLOR_GRUVBOX_BG_DARK
+    preview_text_color: *COLOR_GRUVBOX_FG
+    shadow_color: *COLOR_BLACK
+    # 按键额外配置
+    AAA: *COLOR_GRUVBOX_BG
+    BBB: *COLOR_GRUVBOX_BG
+    CCC: *COLOR_GRUVBOX_BG
+    ABH: *COLOR_GRUVBOX_GRAY
+    AAH: *COLOR_GRUVBOX_GRAY
+    BBH: *COLOR_GRUVBOX_GRAY
+    CCH: *COLOR_GRUVBOX_GRAY
+    # 数字
+    szbdb: *COLOR_GRUVBOX_BG
+    szhcb: *COLOR_GRUVBOX_BG_DARK
+    szhch: *COLOR_GRUVBOX_GRAY
+    szgnb: *COLOR_GRUVBOX_BG_DARK
+    szgnh: *COLOR_GRUVBOX_GRAY
+    szhct: *COLOR_GRUVBOX_FG
+    # 符号
+    bdb: *COLOR_GRUVBOX_BG
+    bdh: *COLOR_GRUVBOX_GRAY
+    # 功能
+    gnb: *COLOR_GRUVBOX_BG_DARK
+    gnh: *COLOR_GRUVBOX_GRAY
+    gns: *COLOR_GRUVBOX_AQUA
+    # 空格
+    kgb: *COLOR_GRUVBOX_BG
+    kgh: *COLOR_GRUVBOX_BG_DARK
+    kgs: *COLOR_GRUVBOX_AQUA
+    kgt: *COLOR_GRUVBOX_FG
+    # backspace
+    bkss: *COLOR_GRUVBOX_AQUA
+    bkst: *COLOR_GRUVBOX_FG # backspace按键颜色
+    bksb: *COLOR_GRUVBOX_BG_DARK # backspace按键背景
+    bksh: *COLOR_GRUVBOX_GRAY # backspace按键激活背景
+    # 回车
+    hcb: *COLOR_GRUVBOX_BG_DARK
+    hch: *COLOR_GRUVBOX_GRAY
+    hcs: *COLOR_GRUVBOX_AQUA
+    hct: *COLOR_GRUVBOX_FG
+    hcht: *COLOR_GRUVBOX_FG
+    hchs: *COLOR_GRUVBOX_AQUA
+    hbdt: *COLOR_GRUVBOX_FG
+    hsb: *COLOR_GRUVBOX_BG_DARK
+    # 符号
+    cdt: *COLOR_GRUVBOX_BLUE
+    fyt: *COLOR_GRUVBOX_GRAY
+    # 菜单
+    xdb: *COLOR_GRUVBOX_BG_DARK
+
   default:
     name: "默认"
     author: SivanLaai
@@ -655,9 +792,9 @@ liquid_keyboard:
       - ！
       - ：
       - 、
-      - “
-      - ”
-      - ‘
+      - "
+      - "
+      - '
       - ···
       - ……
       - { click: "——" }

@@ -2,28 +2,28 @@ patch:
   us_keyboard_layout: true
   style:
     color_scheme: Jrime
-  preset_color_schemes/Jrime:
-    name: Jrime
-    author: JacyL4
-    horizontal: false                       # 水平排列
-    inline_preedit: true                    # 单行显示，false双行显示
-    candidate_format: "%c\u2005%@"          # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
-    corner_radius: 4                        # 候选条圆角
-    border_height: 4                        # 窗口边界高度，大于圆角半径才生效
-    border_width: 4                         # 窗口边界宽度，大于圆角半径才生效
-    font_face: "PingFangSC"                 # 候选词字体
-    font_point: 20                          # 候选字词大小
-    label_font_point: 18                    # 候选编号大小
-
-    text_color: 0x454950                    # 編碼行文字顏色，24位色值，16进制，BGR顺序
-    back_color: 0xd7f5f9                    # 候选条背景色
-    border_color: 0xd7f5f9                  # 候选条边框色
-    label_color: 0x36383c                   # 候选条编号颜色
-    candidate_text_color: 0x36383c          # 候选项文字颜色
-    comment_text_color: 0x888545            # 拼音等提示文字颜色
-    hilited_text_color: 0x36383c            # 高亮拼音 (需要开启内嵌编码)
-    hilited_back_color: 0xc7f1fb            # 高亮拼音 (需要开启内嵌编码)
-    hilited_candidate_text_color: 0xc7f1fb  # 第一候选项文字颜色
-    hilited_candidate_label_color: 0xc7f1fb # 第一候选项编号颜色
-    hilited_comment_text_color: 0xc7f1fb    # 第一候选项拼音等提示文字颜色
-    hilited_candidate_back_color: 0x888545  # 第一候选项背景背景色
+    font_face: "PingFangSC-Regular,HanaMinB"   # 候选字体
+    font_point: 16                             # 候选字大小
+    label_font_face: "PingFangSC-Regular"      # 候选编号字体
+    label_font_point: 12                       # 候选编号大小
+    corner_radius: 5                           # 候选条圆角
+    border_height: 0
+    border_width: 0
+    margin_x: 0                               # 候选条横向边距
+    margin_y: 0                               # 候选条纵向边距
+    spacing: 10                               # 候选字间距
+    candidate_format: "%c"                    # 候选格式
+    text_orientation: horizontal              # 候选排列方向
+    inline_preedit: true                      # true双行显示，false单行显示
+    candidate_text_color: 0xb2dbeb            # 候选项文字颜色（Gruvbox前景色#ebdbb2）
+    comment_text_color: 0x5c6c7d              # 拼音等提示文字颜色（暗灰色#7d6c5c）
+    text_color: 0xb2dbeb                      # 編碼行文字顏色，Gruvbox前景色(#ebdbb2)
+    back_color: 0x282828                      # 候选条背景色（Gruvbox深灰褐色背景#282828）
+    label_color: 0x5c6c7d                     # 候选条编号颜色（暗灰色#7d6c5c）
+    border_color: 0x363839                    # 候选条边框色（Gruvbox深灰褐色#393836）
+    hilited_text_color: 0xb2dbeb              # 高亮拼音（Gruvbox前景色#ebdbb2）
+    hilited_back_color: 0x2f3032              # 高亮拼音背景（Gruvbox稍亮的背景色#32302f）
+    hilited_candidate_text_color: 0x282828    # 第一候选项文字颜色（Gruvbox深色#282828）
+    hilited_candidate_label_color: 0x282828   # 第一候选项编号颜色（Gruvbox深色#282828）
+    hilited_comment_text_color: 0x282828      # 第一候选项拼音等提示文字颜色（Gruvbox深色#282828）
+    hilited_candidate_back_color: 0x2199d7    # 第一候选项背景背景色（Gruvbox黄色#d79921）
