@@ -21,15 +21,15 @@ patch:
     display_tray_icon: false
     label_format: "%s."
     layout:
-      margin_x: 5
-      margin_y: 5
-      border_height: 9
-      border_width: 9
-      spacing: 9
-      candidate_spacing: 9
-      hilite_spacing: 5
-      hilite_padding: 5
-      round_corner: 0
+      margin_x: 1
+      margin_y: 1
+      border_height: 3
+      border_width: 3
+      spacing: 1
+      candidate_spacing: 1
+      hilite_spacing: 3
+      hilite_padding: 3
+      round_corner: 6
 
   preset_color_schemes/Jrime:
     name: Jrime
