@@ -45,4 +45,4 @@ patch:
     hilited_candidate_text_color: 0x282828  # 第一候选项文字颜色（Gruvbox深色#282828）
     hilited_candidate_label_color: 0x282828 # 第一候选项编号颜色（Gruvbox深色#282828）
     hilited_comment_text_color: 0x282828    # 第一候选项拼音等提示文字颜色（Gruvbox深色#282828）
-    hilited_candidate_back_color: 0x2199d7  # 第一候选项背景背景色（Gruvbox黄色#d79921）
+    hilited_candidate_back_color: 0x2fbdfa  # 第一候选项背景背景色（Gruvbox黄色#d79921）
