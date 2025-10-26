@@ -27,12 +27,12 @@ keyboard_height:
   G: &DtextY 1            #主键盘字母纵向位置调节
   H: &VJtextY 0            #助记键盘字母纵向位置调节
   I: &VJhintY -2           #助记键盘韵母纵向位置调节
-  J: &VJtextY -1           #助记键盘字母纵向位置调节，一般不需要调节
+  J: &VJtextY_alt -1       #助记键盘字母纵向位置调节，一般不需要调节
   K: &VJsymbolx 0.8        #助记符号（长按、上排文字）横向偏移（左右移动一般不需要，一般为零）
   L: &CQ_symbol 0          #助记键盘符号（长按、上排文字）偏移
   M: &CQ_hintY -3          #助记符号（下排文字、下档文字）纵向位置调节
   N: &CQ_text_size 20
-  I: &NUM_SYM_W 15.5   # 数字  符号键盘  宽度
+  O: &NUM_SYM_W 15.5   # 数字  符号键盘  宽度
 #-------调节尽量以配色中键高最低的配色为标准------
 other:
 #主键盘结构（四行）
@@ -73,7 +73,7 @@ colors:
   19: &COLOR_DARK_SEA_BLUE 0xff007dc7  #暗海蓝
   20: &COLOR_BLACK_1 0xff888888 #黑1
   21: &COLOR_GRAY_1 0xffaaaaaa #灰1
-  21: &COLOR_LIGHT_BLUE 0xFF56A2FA #浅蓝
+ 101: &COLOR_LIGHT_BLUE 0xFF56A2FA #浅蓝
   22: &COLOR_IFLY_BLUE 0xFF3d9dff #讯飞蓝
   23: &COLOR_LIGHT_IFLY_GRAY_P 0xFFb6b7b9 #讯飞功能按键激活灰
   24: &COLOR_NOSIGNAL_GRAY 0xffa3a7aa #按键无法选择灰

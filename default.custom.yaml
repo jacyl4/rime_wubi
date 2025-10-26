@@ -13,8 +13,10 @@ patch:
     save_options:
       - full_shape
       - ascii_punct
-      - simplification
+      - traditional_chinese
       - extended_charset
+      - symbol_support
+      - emoji_suggestion
 
   menu:
     page_size: 9
@@ -48,12 +50,12 @@ patch:
       - { when: always, accept: "Control+Shift+1", select: .next }
       - { when: always, accept: "Control+Shift+2", toggle: ascii_mode }
       - { when: always, accept: "Control+Shift+3", toggle: full_shape }
-      - { when: always, accept: "Control+Shift+4", toggle: simplification }
+      - { when: always, accept: "Control+Shift+4", toggle: traditional_chinese }
       - { when: always, accept: "Control+Shift+5", toggle: extended_charset }
       - { when: always, accept: "Control+Shift+exclam", select: .next }
       - { when: always, accept: "Control+Shift+at", toggle: ascii_mode }
       - { when: always, accept: "Control+Shift+numbersign", toggle: full_shape }
-      - { when: always, accept: "Control+Shift+dollar", toggle: simplification }
+      - { when: always, accept: "Control+Shift+dollar", toggle: traditional_chinese }
       - { when: always, accept: "Control+Shift+percent", toggle: extended_charset }
       - { when: always, accept: "Shift+space", toggle: full_shape }
       - { when: always, accept: "Control+period", toggle: ascii_punct }
