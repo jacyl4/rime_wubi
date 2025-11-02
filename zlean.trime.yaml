@@ -19,7 +19,7 @@ candidate_setting:
 keyboard_height:
 # ----------键盘高度调整------------
   A: &VJG 42        #主辅键盘键高  自定
-  H: &VJG_Other 42
+  A_other: &VJG_Other 42
   B: &VJM 42        #主辅键盘末行键高  B≈A，如主键盘和符号键盘不等高，调整此数
   C: &FJG 38        #符号键盘键高  (FJG × 5) + (FJH × 6) = (VJG × 4) + (VJH × 5) 解方程可以求出FJG = 50
   E: &DsymY 0.5           #主键盘上档文字纵向位置调节，负数上移，下同
@@ -73,7 +73,7 @@ colors:
   19: &COLOR_DARK_SEA_BLUE 0xff007dc7  #暗海蓝
   20: &COLOR_BLACK_1 0xff888888 #黑1
   21: &COLOR_GRAY_1 0xffaaaaaa #灰1
- 101: &COLOR_LIGHT_BLUE 0xFF56A2FA #浅蓝
+  101: &COLOR_LIGHT_BLUE 0xFF56A2FA #浅蓝
   22: &COLOR_IFLY_BLUE 0xFF3d9dff #讯飞蓝
   23: &COLOR_LIGHT_IFLY_GRAY_P 0xFFb6b7b9 #讯飞功能按键激活灰
   24: &COLOR_NOSIGNAL_GRAY 0xffa3a7aa #按键无法选择灰
@@ -213,61 +213,20 @@ preset_color_schemes:
   gruvbox_dark:
     name: "Gruvbox Dark"
     author: "JacyL4"
-    # 悬浮窗
-    border_color: 0x1d2021 #悬浮窗边框（深色背景）
-    text_color: 0xebdbb2 #悬浮窗编码（浅米色#ebdbb2）
-    text_back_color: 0x282828 #悬浮窗背景（深灰褐色背景#282828）
-    hilited_text_color: 0xebdbb2 #悬浮窗高亮编码（浅米色#ebdbb2）
-    label_color: 0x7d6c5c #悬浮窗候选项序号（暗灰色#7d6c5c）
-    hilited_back_color: 0x32302f #悬浮窗高亮编码背景（稍亮的背景色#32302f）
-    # 候选区
-    back_color: 0x282828 #候选区背景（深灰褐色背景#282828）
-    candidate_separator_color: 0x00000000 #候选区分隔颜色（透明）
-    candidate_text_color: 0xebdbb2 # 候选区文本颜色（浅米色#ebdbb2）
-    comment_text_color: 0x7d6c5c # 候选区编码文本颜色（暗灰色#7d6c5c）
-    hilited_candidate_back_color: 0xd79921 # 候选区高亮背景颜色（Gruvbox黄色#d79921）
-    hilited_candidate_text_color: 0x282828 # 候选区高亮文本颜色（Gruvbox深色#282828）
-    hilited_comment_text_color: 0x282828 # 候选区高亮编码文本颜色（Gruvbox深色#282828）
-    # 键盘
-    keyboard_back_color: 0x1d2021 #键盘背景颜色（深色背景）
-    # 正常按键
-    key_back_color: 0x282828 #按键背景颜色（深灰褐色背景）
-    key_border_color: 0x00000000 #按键边框颜色（透明）
-    key_symbol_color: 0x7d6c5c # 按键符号颜色（暗灰色#7d6c5c）
-    key_text_color: 0xebdbb2 # 按键文本颜色（浅米色#ebdbb2）
-    hilited_key_back_color: 0x7d6c5c #按键激活背景颜色（暗灰色#7d6c5c）
-    hilited_key_symbol_color: 0xebdbb2 #按键激活符号颜色（浅米色#ebdbb2）
-    hilited_key_text_color: 0xebdbb2 #按键激活文本颜色（浅米色#ebdbb2）
-    # 功能键，shift常态
-    off_key_back_color: 0x1d2021 #功能键背景颜色（深色背景）
-    off_key_text_color: 0xebdbb2 #功能键文本颜色（浅米色#ebdbb2）
-    hilited_off_key_back_color: 0x7d6c5c #激活功能键背景颜色（暗灰色#7d6c5c）
-    hilited_off_key_text_color: 0xebdbb2 #激活功能键文本颜色（浅米色#ebdbb2）
-    # shift激活
-    on_key_back_color: 0x7d6c5c # 背景颜色（暗灰色#7d6c5c）
-    on_key_text_color: 0x1d2021 # 文本颜色（深色背景）
-    hilited_on_key_back_color: 0x7d6c5c # 激活背景颜色（暗灰色#7d6c5c）
-    hilited_on_key_text_color: 0x1d2021 # 激活文本颜色（深色背景）
-    # 按键下去气泡
-    preview_back_color: *COLOR_GRUVBOX_BG_DARK
-    preview_text_color: *COLOR_GRUVBOX_FG
-    border_color: *COLOR_GRUVBOX_BG_DARK #悬浮窗边框
-    text_color: *COLOR_GRUVBOX_FG #悬浮窗编码
-    text_back_color: *COLOR_GRUVBOX_BG #悬浮窗背景
+    border_color: *COLOR_GRUVBOX_BG_DARK #悬浮窗边框（深色背景）
+    text_color: *COLOR_GRUVBOX_FG #悬浮窗编码（浅米色#ebdbb2）
+    text_back_color: *COLOR_GRUVBOX_BG #悬浮窗背景（深灰褐色背景#282828）
     hilited_text_color: *COLOR_GRUVBOX_FG #悬浮窗高亮编码
-    label_color: *COLOR_GRUVBOX_FG #悬浮窗候选项序号
+    label_color: *COLOR_GRUVBOX_FG #悬浮窗候选项序号（暗灰色#7d6c5c）
     hilited_back_color: *COLOR_GRUVBOX_BG_DARK #悬浮窗高亮编码背景
-    # 候选区
-    back_color: *COLOR_GRUVBOX_BG #候选区背景状态栏(无障碍)
+    back_color: *COLOR_GRUVBOX_BG #候选区背景
     candidate_separator_color: *COLOR_TRANSPARENT #候选区分隔颜色
     candidate_text_color: *COLOR_GRUVBOX_FG # 候选区文本颜色
     comment_text_color: *COLOR_GRUVBOX_BLUE # 候选区编码文本颜色
     hilited_candidate_back_color: *COLOR_GRUVBOX_YELLOW # 候选区高亮背景颜色
     hilited_candidate_text_color: *COLOR_GRUVBOX_BG_DARK # 候选区高亮文本颜色
     hilited_comment_text_color: *COLOR_GRUVBOX_BG_DARK # 候选区高亮编码文本颜色
-    # 键盘
     keyboard_back_color: *COLOR_GRUVBOX_BG_DARK #键盘背景颜色
-    # 正常按键
     key_back_color: *COLOR_GRUVBOX_BG #按键背景颜色
     key_border_color: *COLOR_TRANSPARENT #按键边框颜色
     key_symbol_color: *COLOR_GRUVBOX_AQUA # 按键符号颜色
@@ -275,19 +234,16 @@ preset_color_schemes:
     hilited_key_back_color: *COLOR_GRUVBOX_GRAY #按键激活背景颜色
     hilited_key_symbol_color: *COLOR_GRUVBOX_FG #按键激活符号颜色
     hilited_key_text_color: *COLOR_GRUVBOX_FG #按键激活文本颜色
-    # 功能键，shift常态
-    off_key_back_color: *COLOR_GRUVBOX_BG_DARK #功能键，shift常态  背景颜色
-    off_key_text_color: *COLOR_GRUVBOX_FG #功能键，shift常态  文本颜色
-    hilited_off_key_back_color: *COLOR_GRUVBOX_GRAY #激活功能键，shift常态  背景颜色
-    hilited_off_key_text_color: *COLOR_GRUVBOX_FG #激活功能键，shift常态  文本颜色
-    # shift激活
-    on_key_back_color: *COLOR_GRUVBOX_AQUA # 背景颜色
-    on_key_text_color: *COLOR_GRUVBOX_BG_DARK # 文本颜色
-    hilited_on_key_back_color: *COLOR_GRUVBOX_BLUE
-    hilited_on_key_text_color: *COLOR_GRUVBOX_BG_DARK
-    # 按键下去气泡
-    preview_back_color: *COLOR_GRUVBOX_BG_DARK
-    preview_text_color: *COLOR_GRUVBOX_FG
+    off_key_back_color: *COLOR_GRUVBOX_BG_DARK #功能键背景颜色（深色背景）
+    off_key_text_color: *COLOR_GRUVBOX_FG #功能键文本颜色
+    hilited_off_key_back_color: *COLOR_GRUVBOX_GRAY #激活功能键背景颜色
+    hilited_off_key_text_color: *COLOR_GRUVBOX_FG #激活功能键文本颜色
+    on_key_back_color: *COLOR_GRUVBOX_AQUA # shift激活背景颜色
+    on_key_text_color: *COLOR_GRUVBOX_BG_DARK # shift激活文本颜色
+    hilited_on_key_back_color: *COLOR_GRUVBOX_BLUE # shift激活高亮背景
+    hilited_on_key_text_color: *COLOR_GRUVBOX_BG_DARK # shift激活高亮文本
+    preview_back_color: *COLOR_GRUVBOX_BG_DARK # 按键下去气泡背景
+    preview_text_color: *COLOR_GRUVBOX_FG # 按键下去气泡文字
     shadow_color: *COLOR_BLACK
     # 按键额外配置
     AAA: *COLOR_GRUVBOX_BG
@@ -457,7 +413,7 @@ preset_keyboards:
       - {click: p, long_click: 0, swipe_up: 0, key_text_color: TEX, key_back_color: AAA, hilited_key_back_color: AAH}
       # 第二行
       - {width: 5}
-      - {click: a, long_click: "=", swipe_up: "=", swipe_up: select_all, key_text_color: TEX, key_back_color: AAA, hilited_key_back_color: AAH}
+      - {click: a, long_click: "=", swipe_up: select_all, key_text_color: TEX, key_back_color: AAA, hilited_key_back_color: AAH}
       - {click: s, long_click: "@", swipe_up: "@", key_text_color: TEX, key_back_color: BBB, hilited_key_back_color: BBH}
       - {click: d, long_click: Date, swipe_up: Time, key_text_color: TEX, key_back_color: CCC, hilited_key_back_color: CCH}
       - {click: f, long_click: ";", swipe_up: ";", key_text_color: TEX, key_back_color: AAA, hilited_key_back_color: AAH}
@@ -576,7 +532,6 @@ preset_keyboards:
     vertical_gap: *NJH
     # keyboard_back_color: xdb
     key_text_offset_y: *DtextY
-    key_symbol_offset_y: *DsymY
     key_press_offset_x: 0
     key_press_offset_y: 8
     key_symbol_offset_x: *DsymX
@@ -626,56 +581,32 @@ preset_keyboards:
     keys:
       # 第一行
       - {click: "", width: 10, key_back_color: xdb, hilited_key_back_color: xdb}
-      - {click: Theme_settings1, hint: 主题, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
+      - {click: Theme_settings1, hint: 主题, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: xdb}
       - {click: "", width: 10, key_back_color: xdb, hilited_key_back_color: xdb}
-      - {click: Color_switch, hint: 配色, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
+      - {click: Color_switch, hint: 配色, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: xdb}
       - {click: "", width: 10, key_back_color: xdb, hilited_key_back_color: xdb}
-      - {click: Menu, hint: 方案, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
+      - {click: Menu, hint: 方案, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: xdb}
       - {click: "", width: 10, key_back_color: xdb, hilited_key_back_color: xdb}
       # 第二行
       - {click: "", width: 10, key_back_color: xdb, hilited_key_back_color: xdb}
-      - {click: Settings, hint: 设置, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
+      - {click: Settings, hint: 设置, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: xdb}
       - {click: "", width: 10, key_back_color: xdb, hilited_key_back_color: xdb}
-      - {click: Deploy, hint: 布署, swipe_left: K_menux, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
+      - {click: Deploy, hint: 布署, swipe_left: K_menux, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: xdb}
       - {click: "", width: 10, swipe_left: K_menux, key_back_color: xdb, hilited_key_back_color: xdb}
-      - {click: VOICE_ASSIST, hint: 语音, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
+      - {click: VOICE_ASSIST, hint: 语音, key_hint_offset_y: 0, key_text_offset_y: -4, key_text_color: key_text_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: xdb}
       - {click: "", width: 10, swipe_left: K_menux, key_back_color: xdb, hilited_key_back_color: xdb}
       #第三行
       - {click: "", width: 100, label: "By SivanLaai", swipe_left: K_menux, key_back_color: xdb, hilited_key_back_color: xdb, key_text_size: 16}
       # 第四行
       - {height: *VJG_Other, click: "", width: 47, swipe_left: K_menux, key_back_color: xdb, hilited_key_back_color: xdb}
-      - {click: K_menux1, key_text_size: 8, width: 3, swipe_left: K_menux, key_text_offset_y: -9, key_text_offset_x: 0, key_back_color: key_back_color, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
-      - {click: K_menux1, key_text_size: 7, width: 3, swipe_left: K_menux, key_text_offset_y: -9, key_text_offset_x: 0, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: key_back_color, hilited_key_back_color: xdb}
+      - {click: K_menux1, key_text_size: 8, width: 3, swipe_left: K_menux, key_text_offset_y: -9, key_text_offset_x: 0, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: xdb}
+      - {click: K_menux1, key_text_size: 7, width: 3, swipe_left: K_menux, key_text_offset_y: -9, key_text_offset_x: 0, key_symbol_color: key_text_color, key_back_color: xdb, hilited_key_back_color: xdb}
       - {click: "", width: 20, swipe_left: K_menux, key_back_color: xdb, hilited_key_back_color: xdb}
-      - {click: K_back1, width: 6, key_text_offset_y: -11, key_back_color: key_back_color, key_back_color: xdb, hilited_key_text_color: key_text_color, hilited_key_back_color: xdb}
-      - {click: K_back, width: 6, key_text_offset_y: -11, key_text_size: 10, key_back_color: key_back_color, key_back_color: xdb, hilited_key_text_color: key_text_color, hilited_key_back_color: xdb}
+      - {click: K_back1, width: 6, key_text_offset_y: -11, key_back_color: xdb, hilited_key_text_color: key_text_color, hilited_key_back_color: xdb}
+      - {click: K_back, width: 6, key_text_offset_y: -11, key_text_size: 10, key_back_color: xdb, hilited_key_text_color: key_text_color, hilited_key_back_color: xdb}
       - {click: "", width: 15, key_back_color: xdb, hilited_key_back_color: xdb}
     name: "选单1"
     width: 20
-  menux:
-    __include: /preset_keyboards/menu
-    __patch:
-        "keys/@1/click": Hint_switch1
-        "keys/@1/hint": "提示"
-        "keys/@3/click": Comment_switch1
-        "keys/@3/hint": "注解"
-        "keys/@5/click": Candidate_switch1
-        "keys/@5/hint": "候选窗"
-        "keys/@16/click": K_menu1
-        "keys/@16/key_text_color": key_text_color
-        "keys/@16/key_text_size": 7
-        "keys/@17/click": K_menu1
-        "keys/@17/key_text_color": cdt
-        "keys/@17/key_text_size": 8
-        "keys/@10/swipe_right": K_menu
-        "keys/@11/swipe_right": K_menu
-        "keys/@12/swipe_right": K_menu
-        "keys/@13/swipe_right": K_menu
-        "keys/@14/swipe_right": K_menu
-        "keys/@15/swipe_right": K_menu
-        "keys/@16/swipe_right": K_menu
-        "keys/@17/swipe_right": K_menu
-
 android_keys:
   name: [VoidSymbol, SOFT_LEFT, SOFT_RIGHT, HOME, BACK, CALL, ENDCALL,
     '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
@@ -792,9 +723,9 @@ liquid_keyboard:
       - ！
       - ：
       - 、
-      - "
-      - "
-      - '
+      - '"'
+      - '"'
+      - "'"
       - ···
       - ……
       - { click: "——" }
@@ -1247,7 +1178,7 @@ preset_keys:
   Menu2: {label: "选单", functional: false, send: Menu}
   Settings: {label: ⚙, functional: false, send: SETTINGS}
   Color_settings: {label: ◲, send: SETTINGS, option: "color"}
-  Color_settings: {label: 配色, send: SETTINGS, option: "color"}
+  Color_settings_text: {label: 配色, send: SETTINGS, option: "color"}
   Theme_settings: {label: "✡", send: SETTINGS, option: "theme"}
   Theme_settings1: {label: ❖, send: SETTINGS, option: "theme"}
   Theme_settings2: {label: 主题, send: SETTINGS, option: "theme"}
